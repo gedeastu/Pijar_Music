@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily:{
-      outfit : ['Outfit','sans']
+      outfit : ['Outfit','sans'],
+      raleway : ['Raleway','sans']
     },
     screens: {
       'sm': '640px',
