@@ -3,8 +3,8 @@ export default function Header(){
     return(
         <>
         <header id='header' className='max-w-full h-screen bg-cover bg-center relative'>
-        <nav className='relative px-7 py-5 flex flex-row-reverse items-center justify-between md:flex-row md:px-28 md:py-8'>
-        <div id="logo" className='flex flex-row-reverse items-center gap-2 md:flex-row'>
+        <nav className='relative px-7 py-5 flex flex-row-reverse items-center justify-between md:flex-row md:px-28 md:py-7'>
+        <div id="logo" className='flex flex-row-reverse items-center gap-2 md:flex-row md:scale-125'>
         <svg className='' width="36" height="48" viewBox="0 0 36 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7678 41.0164H12.2801C11.3627 41.0164 10.1952 40.9054 9.42376 40.0621C8.67319 39.2411 8.69404 38.2202 8.71489 37.5323V35.5572C3.46094 31.829 0 25.349 0 19.1797C0 13.3433 2.46019 7.88409 6.73424 4.22245C11.0083 0.560813 16.6166 -0.81507 22.0999 0.472045C27.3122 1.69259 31.8156 5.39862 34.1507 10.3918C38.6749 20.0896 34.3175 30.5863 27.3539 35.5794V37.2438C27.3747 37.8874 27.3956 39.0635 26.5408 39.9956C25.8944 40.6613 24.9771 41.0164 23.7678 41.0164ZM12.2592 37.6876C12.0716 37.6876 11.9256 37.6654 11.8214 37.6654C11.8214 37.6432 11.8214 37.6432 11.8005 37.6432V34.6474C11.8005 34.0704 11.5295 33.5378 11.05 33.2271C7.08867 30.675 3.08566 25.349 3.08566 19.1797C3.08566 14.3419 5.10801 9.83697 8.65235 6.7967C12.1967 3.75643 16.846 2.62465 21.3911 3.68985C25.686 4.68848 29.3971 7.72875 31.3152 11.8342C35.214 20.1561 31.1276 29.2326 24.9562 33.2049C24.4976 33.4934 24.2057 34.0482 24.2057 34.6252V37.4213V37.6432C24.1223 37.6654 23.9763 37.6876 23.7678 37.6876H12.2592Z" fill="#FF6002"/>
         <path d="M11.8214 37.6654C11.9256 37.6654 12.0716 37.6876 12.2592 37.6876H23.7678C23.9763 37.6876 24.1223 37.6654 24.2057 37.6432V37.4213V34.6252C24.2057 34.0482 24.4976 33.4934 24.9562 33.2049C31.1276 29.2326 35.214 20.1561 31.3152 11.8342C29.3971 7.72875 25.686 4.68848 21.3911 3.68985C16.846 2.62465 12.1967 3.75643 8.65235 6.7967C5.10801 9.83697 3.08566 14.3419 3.08566 19.1797C3.08566 25.349 7.08867 30.675 11.05 33.2271C11.5295 33.5378 11.8005 34.0704 11.8005 34.6474V37.6432C11.8214 37.6432 11.8214 37.6432 11.8214 37.6654Z" fill="#FF6002"/>
@@ -18,7 +18,18 @@ export default function Header(){
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" className='fill-white' viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
         </button> */}
         <ul className='hidden md:flex flex-row items-center gap-10 font-outfit font-[550] text-xl'>
-           <li>Who We Are</li>
+           <li className='relative'>
+            {/* <input id='dropdown' type="checkbox" className='peer z-30 absolute w-full right-0 bottom-0 top-0 left-0 opacity-0 transition-all duration-200'/>
+            <label htmlFor='dropdown' className='flex flex-row items-center gap-2'>
+            <p>Who we are</p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" className='fill-white peer-checked:translate-y-full' viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+            </label>
+            <ul className='hidden absolute top-10 duration-200 bg-white rounded-md p-3 text-[#FF6002] w-full peer:transition-all peer-checked:flex peer-checked:flex-col'>
+                <li>This We are</li>
+                <li>This We are</li>
+                <li>This We are</li>
+            </ul> */}
+           </li>
            <li>Our Campaign</li>
            <li>News</li>
            <li>Contact Us</li>
