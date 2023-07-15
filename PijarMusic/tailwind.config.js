@@ -7,7 +7,8 @@ export default {
   theme: {
     fontFamily:{
       outfit : ['Outfit','sans'],
-      raleway : ['Raleway','sans']
+      raleway : ['Raleway','sans'],
+      plusJakartaSans : ['Plus Jakarta Sans','sans']
     },
     screens: {
       'sm': '640px',
