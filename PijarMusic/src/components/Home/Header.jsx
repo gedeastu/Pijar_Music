@@ -132,7 +132,7 @@ export default function Header(){
         to natural disaster victims.</h1>
         <p className='text-sm'>"Join the rhythm of compassion and make a lasting impact. Donate to our music concert charity and help rebuild lives affected by natural disasters."</p>
         </div>
-        div
+        divup
         </article>
         </aside>
         </div>
