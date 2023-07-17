@@ -27,7 +27,7 @@ export default function Header(){
     //   ];
     return(
         <>
-        <header id='header' className='max-w-full h-[90rem] bg-cover bg-center relative md:h-screen'>
+        <header id='header' className='max-w-full h-[95rem] bg-cover bg-center relative md:h-screen'>
             <nav className='relative px-7 py-7 flex flex-row-reverse items-center justify-between md:flex-row md:px-28 md:py-7'>
             <div id="logo" className='flex flex-row-reverse items-center gap-2 md:flex-row md:scale-125'>
             <svg className='' width="36" height="48" viewBox="0 0 36 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,17 +73,17 @@ export default function Header(){
                 </button>
             </li>
             </ul>
-            <button htmlFor="drawer" className='relative z-30 peer md:hidden'>
+            <button htmlFor="drawer" className='relative z-50 peer md:hidden'>
             <svg xmlns="http://www.w3.org/2000/svg" height="2em" className='fill-white relative z-30 peer-checked:fill-[#FF6002]' viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
             </button>
             {/* <svg xmlns="http://www.w3.org/2000/svg" height="1.7em" className='fill-[#FF6002] z-40 top-5 fixed invisible peer-checked:visible' viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg> */}
-            <div className='z-20 fixed -top-96 left-0 w-screen h-72 bg-white shadow-2xl peer-focus:top-0 peer:transition-all duration-200'>  
+            <div className='z-40 fixed -top-96 left-0 w-screen h-72 bg-white shadow-2xl peer-focus:top-0 peer:transition-all duration-200'>  
             </div>
-            <div className="z-10 fixed left-0 top-0 bg-gray-900 bg-opacity-30 h-screen w-screen opacity-0 peer-focus:opacity-100 peer:transition-all duration-200"></div>
+            <div className="z-30 fixed left-0 top-0 bg-gray-900 bg-opacity-30 h-screen w-screen opacity-0 peer-focus:opacity-100 peer:transition-all duration-200"></div>
             </div>
             </nav>
             <div className='flex flex-col px-7 items-center gap-14 md:flex-row md:items-center md:px-28 md:justify-between'>
-            <article className='text-white flex flex-col items-start justify-center h-[45rem] gap-9 font-outfit md:h-[45rem]'>
+            <article className='text-white flex flex-col items-start justify-center h-[43rem] gap-9 font-outfit'>
                 <h1 className='font-semibold'>TRUSTED MUSIC COMPANY</h1>
                 <h2 className='font-bold text-5xl md:text-7xl'>Let's Help And Make
                     <br />
@@ -162,8 +162,41 @@ export default function Header(){
                 <svg xmlns="http://www.w3.org/2000/svg" className='fill-[#FF6002]' height="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
                 </button>
                 </article>
-                <div className='w-[25rem] bg-[#FF6002] h-96 absolute -right-3 -bottom-5 rounded-lg md:w-[35rem]'></div>
+                <div className='w-[25rem] bg-[#FF6002] h-96 absolute -right-3 -bottom-5 rounded-lg md:w-[35rem] md:-right-7 md:-bottom-7'></div>
             </aside>
+            </div>
+            <div className='grid grid-cols-3 place-content-center w-full h-8 bg-[#FF6002] absolute bottom-0 z-10 px-7 md:px-14 md:py-1'>
+             <div id="copyright" className=''>
+             <p className='font-poppins font-semibold'>Pijar Music © 2023 Jakarta Inc. All Rights Reserved.</p>
+             </div>
+             <div id='sosmed' className='place-self-center flex flex-row items-center gap-5'>
+             <svg width="10" height="25" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M6.54128 6.75L6.90427 4.57828H4.63467V3.16898C4.63467 2.57484 4.95172 1.9957 5.9682 1.9957H7V0.146719C7 0.146719 6.06367 0 5.16844 0C3.29936 0 2.07764 1.04016 2.07764 2.92313V4.57828H0V6.75H2.07764V12H4.63467V6.75H6.54128Z" fill="white"/>
+             </svg>
+             <svg width="20" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M13.7075 1.4082C13.5464 0.853898 13.072 0.417352 12.4697 0.269203C11.3779 0 7 0 7 0C7 0 2.6221 0 1.53029 0.269203C0.927952 0.417375 0.453555 0.853898 0.292544 1.4082C0 2.41289 0 4.50909 0 4.50909C0 4.50909 0 6.6053 0.292544 7.60999C0.453555 8.16429 0.927952 8.58265 1.53029 8.7308C2.6221 9 7 9 7 9C7 9 11.3779 9 12.4697 8.7308C13.072 8.58265 13.5464 8.16429 13.7075 7.60999C14 6.6053 14 4.50909 14 4.50909C14 4.50909 14 2.41289 13.7075 1.4082ZM5.56817 6.41229V2.6059L9.22725 4.50914L5.56817 6.41229Z" fill="white"/>
+             </svg>
+             <svg width="20" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M13.4582 2.99061C13.4677 3.12186 13.4677 3.25313 13.4677 3.38437C13.4677 7.38748 10.3744 12 4.72083 12C2.97906 12 1.36105 11.5031 0 10.6406C0.247472 10.6687 0.485393 10.6781 0.742386 10.6781C2.17955 10.6781 3.50254 10.2 4.55902 9.38439C3.20749 9.35625 2.07487 8.48438 1.68464 7.28437C1.87501 7.31248 2.06535 7.33124 2.26524 7.33124C2.54125 7.33124 2.81729 7.29372 3.07425 7.22813C1.66562 6.94686 0.609114 5.72812 0.609114 4.25624V4.21876C1.01836 4.44376 1.49429 4.58438 1.9987 4.60311C1.17065 4.05935 0.628157 3.13124 0.628157 2.08123C0.628157 1.51874 0.780413 1.00311 1.04693 0.553111C2.56026 2.39061 4.83503 3.59059 7.38577 3.72186C7.33819 3.49686 7.30963 3.26251 7.30963 3.02813C7.30963 1.35936 8.6802 0 10.3839 0C11.269 0 12.0685 0.365624 12.6301 0.95625C13.3249 0.825006 13.9911 0.571868 14.5812 0.225002C14.3528 0.928143 13.8674 1.51877 13.2297 1.89374C13.8484 1.82815 14.448 1.65936 15 1.42501C14.5813 2.02499 14.0578 2.55934 13.4582 2.99061Z" fill="white"/>
+             </svg>
+             <svg width="20" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M6.50145 2.92335C4.65694 2.92335 3.16916 4.297 3.16916 6C3.16916 7.703 4.65694 9.07665 6.50145 9.07665C8.34596 9.07665 9.83374 7.703 9.83374 6C9.83374 4.297 8.34596 2.92335 6.50145 2.92335ZM6.50145 8.00022C5.30948 8.00022 4.33502 7.1032 4.33502 6C4.33502 4.8968 5.30658 3.99978 6.50145 3.99978C7.69632 3.99978 8.66788 4.8968 8.66788 6C8.66788 7.1032 7.69342 8.00022 6.50145 8.00022ZM10.7473 2.7975C10.7473 3.19647 10.3993 3.51512 9.97005 3.51512C9.53793 3.51512 9.19281 3.1938 9.19281 2.7975C9.19281 2.40121 9.54083 2.07988 9.97005 2.07988C10.3993 2.07988 10.7473 2.40121 10.7473 2.7975ZM12.9543 3.52583C12.905 2.56454 12.6672 1.71304 11.9045 1.01149C11.1446 0.309941 10.2224 0.0903715 9.1812 0.0421734C8.10814 -0.0140578 4.89186 -0.0140578 3.8188 0.0421734C2.78054 0.0876939 1.85828 0.307263 1.09554 1.00881C0.332794 1.71036 0.0978806 2.56187 0.0456776 3.52315C-0.0152259 4.51389 -0.0152259 7.48343 0.0456776 8.47417C0.0949805 9.43546 0.332794 10.287 1.09554 10.9885C1.85828 11.6901 2.77764 11.9096 3.8188 11.9578C4.89186 12.0141 8.10814 12.0141 9.1812 11.9578C10.2224 11.9123 11.1446 11.6927 11.9045 10.9885C12.6643 10.287 12.9021 9.43546 12.9543 8.47417C13.0152 7.48343 13.0152 4.51657 12.9543 3.52583ZM11.568 9.53721C11.3418 10.062 10.9039 10.4664 10.3326 10.6779C9.47702 10.9912 7.4469 10.9189 6.50145 10.9189C5.556 10.9189 3.52298 10.9885 2.67033 10.6779C2.1019 10.469 1.66397 10.0647 1.43486 9.53721C1.09554 8.74729 1.17384 6.87292 1.17384 6C1.17384 5.12708 1.09844 3.25003 1.43486 2.46279C1.66107 1.93797 2.099 1.53364 2.67033 1.3221C3.52588 1.00881 5.556 1.08111 6.50145 1.08111C7.4469 1.08111 9.47992 1.01149 10.3326 1.3221C10.901 1.53096 11.3389 1.93529 11.568 2.46279C11.9074 3.25271 11.8291 5.12708 11.8291 6C11.8291 6.87292 11.9074 8.74997 11.568 9.53721Z" fill="white"/>
+             </svg>
+             </div>
+             <div id="contact" className='place-self-end flex flex-row items-center gap-10'>
+                <div id="telephone" className='flex flex-row items-center gap-2'>
+                <svg width="25" height="20" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9766 11.8378L14.2954 14.7909C14.1997 15.2084 13.8328 15.5005 13.403 15.5005C6.01172 15.4999 0 9.48821 0 2.09661C0 1.66712 0.292061 1.29973 0.70957 1.20452L3.6627 0.523366C4.09277 0.423698 4.53223 0.64694 4.71094 1.05423L6.07383 4.23294C6.23314 4.60735 6.12568 5.04358 5.81074 5.30081L4.2334 6.56731C5.22891 8.59524 6.87773 10.2441 8.90625 11.2402L10.1977 9.66399C10.4522 9.34817 10.8917 9.23889 11.2661 9.40105L14.4448 10.7636C14.8271 10.9648 15.0762 11.4101 14.9766 11.8378Z" fill="white"/>
+                </svg>
+                <p>+62-897-0557- 659</p>
+                </div>
+                <div id="messages" className='flex flex-row items-center gap-2'>
+                <svg width="25" height="20" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.00597 6.8525C7.54191 6.8525 7.07785 6.73035 6.68201 6.48281L0.819092 2.82438V7.93387C0.819092 8.53088 1.4224 9.01525 2.16663 9.01525H13.8453C14.5895 9.01525 15.1928 8.53111 15.1928 7.93387V2.82438L9.33105 6.48528C8.93521 6.73085 8.46919 6.8525 8.00597 6.8525ZM1.27641 2.19583L7.23366 5.91531C7.68818 6.19917 8.32489 6.19917 8.7794 5.91531L14.7367 2.19583C14.9991 2.01561 15.1928 1.7385 15.1928 1.44563C15.1928 0.848398 14.5893 0.364258 13.8453 0.364258H2.16663C1.4224 0.364258 0.819092 0.848398 0.819092 1.44563C0.819092 1.7385 0.987815 2.01561 1.27641 2.19583Z" fill="white"/>
+                </svg> 
+                <p>+62-897-0557- 659</p>
+                </div>
+             </div>
             </div>
             <div id='gradient' className='bg-gradient-to-t from-white to-transparent h-40 opacity-25 absolute bottom-0 w-full md:h-96'></div>
         </header>

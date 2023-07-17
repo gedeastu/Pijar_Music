@@ -8,7 +8,8 @@ export default {
     fontFamily:{
       outfit : ['Outfit','sans'],
       raleway : ['Raleway','sans'],
-      plusJakartaSans : ['Plus Jakarta Sans','sans']
+      plusJakartaSans : ['Plus Jakarta Sans','sans'],
+      poppins : ['Poppins','sans']
     },
     screens: {
       'sm': '640px',
