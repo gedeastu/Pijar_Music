@@ -45,7 +45,7 @@ export default function Header(){
             </button> */}
             <ul className='hidden md:flex flex-row items-center gap-10 font-outfit font-[550] text-xl text-white'>
             <li className='relative'>
-                <input id='dropdown' type="checkbox" className='peer z-30 absolute w-full right-0 bottom-0 top-0 left-0 opacity-0 transition-all duration-200'/>
+                <input id='dropdown' type="checkbox" className='peer z-50 absolute w-full right-0 bottom-0 top-0 left-0 opacity-0 transition-all duration-200'/>
                 <label htmlFor='dropdown' className='flex flex-row items-center gap-2.5 relative'>
                 <p>Who we are</p>
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" className='fill-white mb-2' viewBox="0 0 320 512"><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
