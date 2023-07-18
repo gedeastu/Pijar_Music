@@ -4,7 +4,7 @@ import WhoWeAre from '../components/Home/WhoWeAre'
 export default function HomePage(){
     return(
         <>
-        <div className='container bg-white mx-auto max-w-full h-max'>
+        <div className='container bg-white mx-auto max-w-full flex flex-col h-max'>
         <Header/>
         <WhoWeAre/>
         </div>
