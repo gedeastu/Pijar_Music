@@ -5,6 +5,7 @@ export default function Main(){
     return(
         <>
         <main className='h-max pt-20 gap-40 flex flex-col px-7 relative md:flex-row md:items-center md:h-[50rem] md:gap-0 md:justify-between md:px-28 md:pt-0'>
+        {/* <div id='gradient' className='bg-gradient-to-t from-white to-transparent h-40 z-20 absolute -top-52 w-full md:h-96'></div> */}
             <aside className='relative pl-8 flex flex-row items-center'>
                 <div className='w-[20rem] h-[25rem] relative'>
                 <svg className='absolute top-10 z-30 -left-10' width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,22 +23,22 @@ export default function Main(){
                 <img src={mcr} alt="" className='w-52 h-60 object-center rounded-lg object-cover absolute z-20 -right-20 -bottom-16'/>
                 </div>
             </aside>
-            <article className='flex flex-col justify-center items-start pb-10 md:pb-0'>
-               <div id="titleDesc">
-                <h1 className='text-[#FF6002] font-semibold font-outfit'>Who we are</h1>
-                <h2 className='text-black font-outfit font-semibold'>We’re Volunteers Community 
+            <article className='flex flex-col justify-center items-start pb-10 gap-8 md:pb-0'>
+               <div id="titleDesc" className='flex flex-col gap-3'>
+                <h1 className='text-[#FF6002] font-semibold font-outfit text-2xl'>Who we are</h1>
+                <h2 className='text-black font-outfit font-semibold text-3xl'>We’re Volunteers Community 
                 <br />
                 & Artist </h2>
                 <div className='bg-[#FF6002] w-20 h-2 rounded-full'></div>
-                <p className='text-black font-outfit'>Join us and make your life more valuable and useful, be a part of us 
+                <p className='text-black font-outfit text-md'>Join us and make your life more valuable and useful, be a part of us 
                 <br />
                 and contribute to the nation and state and the 
                 simplest for the 
                 <br />
                 environment and yourself</p>
                </div>
-               <ul>
-                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold'>
+               <ul className=''>
+                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold text-lg'>
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_235)">
                 <path d="M0.991699 9C0.991699 4.02891 5.02061 0 9.9917 0C14.9628 0 18.9917 4.02891 18.9917 9C18.9917 13.9711 14.9628 18 9.9917 18C5.02061 18 0.991699 13.9711 0.991699 9ZM14.0628 7.44609C14.446 7.06289 14.446 6.43711 14.0628 6.05391C13.6796 5.6707 13.0538 5.6707 12.6706 6.05391L8.8667 9.85781L7.31279 8.30391C6.92959 7.9207 6.30381 7.9207 5.92061 8.30391C5.5374 8.68711 5.5374 9.31289 5.92061 9.69609L8.17061 11.9461C8.55381 12.3293 9.17959 12.3293 9.56279 11.9461L14.0628 7.44609Z" fill="#FF6002"/>
@@ -50,7 +51,7 @@ export default function Main(){
                 </svg>  
                 <p>Support people in extreme need</p>
                 </li>
-                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold'>
+                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold text-lg'>
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_235)">
                 <path d="M0.991699 9C0.991699 4.02891 5.02061 0 9.9917 0C14.9628 0 18.9917 4.02891 18.9917 9C18.9917 13.9711 14.9628 18 9.9917 18C5.02061 18 0.991699 13.9711 0.991699 9ZM14.0628 7.44609C14.446 7.06289 14.446 6.43711 14.0628 6.05391C13.6796 5.6707 13.0538 5.6707 12.6706 6.05391L8.8667 9.85781L7.31279 8.30391C6.92959 7.9207 6.30381 7.9207 5.92061 8.30391C5.5374 8.68711 5.5374 9.31289 5.92061 9.69609L8.17061 11.9461C8.55381 12.3293 9.17959 12.3293 9.56279 11.9461L14.0628 7.44609Z" fill="#FF6002"/>
@@ -63,7 +64,7 @@ export default function Main(){
                 </svg>  
                 <p>Largest global crowdfunding community</p>
                 </li>
-                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold'>
+                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold text-lg'>
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_235)">
                 <path d="M0.991699 9C0.991699 4.02891 5.02061 0 9.9917 0C14.9628 0 18.9917 4.02891 18.9917 9C18.9917 13.9711 14.9628 18 9.9917 18C5.02061 18 0.991699 13.9711 0.991699 9ZM14.0628 7.44609C14.446 7.06289 14.446 6.43711 14.0628 6.05391C13.6796 5.6707 13.0538 5.6707 12.6706 6.05391L8.8667 9.85781L7.31279 8.30391C6.92959 7.9207 6.30381 7.9207 5.92061 8.30391C5.5374 8.68711 5.5374 9.31289 5.92061 9.69609L8.17061 11.9461C8.55381 12.3293 9.17959 12.3293 9.56279 11.9461L14.0628 7.44609Z" fill="#FF6002"/>
@@ -76,7 +77,7 @@ export default function Main(){
                 </svg>  
                 <p>Make the world a better place</p>
                 </li>
-                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold'>
+                <li className='flex flex-row items-center text-black font-outfit gap-2 font-semibold text-lg'>
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_235)">
                 <path d="M0.991699 9C0.991699 4.02891 5.02061 0 9.9917 0C14.9628 0 18.9917 4.02891 18.9917 9C18.9917 13.9711 14.9628 18 9.9917 18C5.02061 18 0.991699 13.9711 0.991699 9ZM14.0628 7.44609C14.446 7.06289 14.446 6.43711 14.0628 6.05391C13.6796 5.6707 13.0538 5.6707 12.6706 6.05391L8.8667 9.85781L7.31279 8.30391C6.92959 7.9207 6.30381 7.9207 5.92061 8.30391C5.5374 8.68711 5.5374 9.31289 5.92061 9.69609L8.17061 11.9461C8.55381 12.3293 9.17959 12.3293 9.56279 11.9461L14.0628 7.44609Z" fill="#FF6002"/>
