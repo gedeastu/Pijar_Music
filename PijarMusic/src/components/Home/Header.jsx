@@ -165,7 +165,7 @@ export default function Header(){
                 <div className='w-[25rem] bg-[#FF6002] h-96 absolute -right-3 -bottom-5 rounded-lg md:w-[35rem] md:-right-7 md:-bottom-7'></div>
             </aside>
             </div>
-            <div className='grid grid-cols-1 gap-1.5 place-content-center w-full py-2.5 h-max bg-[#FF6002] absolute bottom-0 z-10 px-7 md:px-14 md:grid-cols-2 md:py-2 md:h-max md:gap-0'>
+            <div className='grid grid-cols-1 gap-1.5 place-content-center w-full py-2.5 h-max bg-[#FF6002] absolute bottom-0 z-10 px-7 md:px-14 md:grid-cols-2 md:h-[2.5rem] md:gap-0'>
              <div id="copyright" className='md:place-self-start'>
              <p className='font-poppins font-semibold'>Pijar Music © 2023 Jakarta Inc. All Rights Reserved.</p>
              </div>
