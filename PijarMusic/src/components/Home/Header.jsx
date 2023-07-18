@@ -165,7 +165,7 @@ export default function Header(){
                 <div className='w-[25rem] bg-[#FF6002] h-96 absolute -right-3 -bottom-5 rounded-lg md:w-[35rem] md:-right-7 md:-bottom-7'></div>
             </aside>
             </div>
-            <div className='grid grid-cols-1 gap-1.5 place-content-center w-full h-max bg-[#FF6002] absolute bottom-0 z-10 px-7 md:px-14 md:py-1 md:grid-cols-3 md:h-8 md:gap-0'>
+            {/* <div className='grid grid-cols-1 gap-1.5 place-content-center w-full h-max bg-[#FF6002] absolute bottom-0 z-10 px-7 md:px-14 md:py-1 md:grid-cols-3 md:h-8 md:gap-0'>
              <div id="copyright" className=''>
              <p className='font-poppins font-semibold'>Pijar Music © 2023 Jakarta Inc. All Rights Reserved.</p>
              </div>
@@ -197,7 +197,7 @@ export default function Header(){
                 <p>+62-897-0557- 659</p>
                 </div>
              </div>
-            </div>
+            </div> */}
             <div id='gradient' className='bg-gradient-to-t from-white to-transparent h-40 opacity-25 absolute bottom-0 w-full md:h-96'></div>
         </header>
         </>
