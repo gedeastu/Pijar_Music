@@ -2,8 +2,13 @@ import './OurCampaign.css'
 export default function OurCampaign(){  
     return(
         <>
+        <article>
+
+        </article>
+        <article>
         {/* <Swiper
         // install Swiper modules
+        loop={true}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={2}
@@ -21,6 +26,7 @@ export default function OurCampaign(){
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         </Swiper> */}
+        </article>
         </>
     )
 }
