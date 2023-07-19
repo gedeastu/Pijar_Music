@@ -16,12 +16,16 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.0",
     "@mui/styled-engine-sc": "^5.12.0",
+    "@trendyol-js/react-carousel": "^3.0.2",
     "framer-motion": "^10.12.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-nested-dropdown": "^0.0.12",
     "react-router-dom": "^6.14.1",
-    "styled-components": "^5.3.11"
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.11",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@types/node": "^20.4.2",
