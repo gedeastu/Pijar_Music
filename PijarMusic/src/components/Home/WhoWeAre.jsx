@@ -1,10 +1,10 @@
 import './WhoWeAre.css'
 import theWeeknd from '../assets/theWeeknd.jpeg'
 import mcr from '../assets/mcr.jpeg'
-export default function Main(){  
+export default function WhoWeAre(){  
     return(
         <>
-        <main className='h-max py-20 gap-40 flex flex-col px-7 relative md:flex-row md:items-center md:h-max md:gap-0 md:justify-between md:px-28 md:py-[11.5rem]'>
+
         {/* <div id='gradient' className='bg-gradient-to-t from-white to-transparent h-40 z-20 absolute -top-52 w-full md:h-96'></div> */}
             <aside className='relative pl-8 flex flex-row items-center'>
                 <div className='w-[20rem] h-[25rem] relative md:w-[30rem] md:h-[35rem]'>
@@ -93,7 +93,6 @@ export default function Main(){
                </ul>
                <button className='font-outfit bg-[#FF6002] font-semibold h-14 w-32 flex items-center justify-center rounded-lg text-white md:w-52 md:h-16'>About Us</button>
             </article>
-        </main>
         </>
     )
 }
