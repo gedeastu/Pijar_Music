@@ -26,7 +26,7 @@ export default function OurCampaign(){
         <Swiper
         // install Swiper modules
         autoplay = {{
-            delay: 10000,
+            delay: 5000,
             disableOnInteraction: false,
         }}
         effect="fade"
