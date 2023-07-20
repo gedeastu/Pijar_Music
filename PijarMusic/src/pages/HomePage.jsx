@@ -14,7 +14,7 @@ export default function HomePage(){
         <>
         <div className='container bg-white mx-auto max-w-full flex flex-col h-max'>
         <Header/>
-        <main className='h-max py-20 gap-40 flex flex-col px-7 relative md:flex-row md:items-center md:h-max md:gap-0 md:justify-between md:px-28 md:py-[11.5rem]'>
+        <main className='flex flex-col'>
         <WhoWeAre/>
         <OurCampaign/>
         </main>

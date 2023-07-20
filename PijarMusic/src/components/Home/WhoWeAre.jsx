@@ -4,9 +4,8 @@ import mcr from '../assets/mcr.jpeg'
 export default function WhoWeAre(){  
     return(
         <>
-
-        {/* <div id='gradient' className='bg-gradient-to-t from-white to-transparent h-40 z-20 absolute -top-52 w-full md:h-96'></div> */}
-            <aside className='relative pl-8 flex flex-row items-center'>
+        <article className='h-max w-full flex flex-col gap-40 py-20 px-7 md:px-28 md:py-[11.5rem] md:flex-row md:items-center md:gap-0 md:justify-between'>
+        <aside className='relative pl-8 flex flex-row items-center'>
                 <div className='w-[20rem] h-[25rem] relative md:w-[30rem] md:h-[35rem]'>
                 <svg className='absolute top-10 z-20 -left-7 h-16 md:h-24 md:-left-10' viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="42.418" cy="42.5491" r="42.418" fill="#FF6002"/>
@@ -22,8 +21,8 @@ export default function WhoWeAre(){
                 <img src={theWeeknd} alt="" className='w-full h-full object-cover rounded-lg'/>
                 <img src={mcr} alt="" className='w-52 h-60 object-center rounded-lg object-cover absolute z-20 -right-20 -bottom-16 md:w-60 md:h-80 md:-bottom-12'/>
                 </div>
-            </aside>
-            <article className='flex flex-col justify-center items-start gap-8 md:pb-0'>
+        </aside>
+        <article className='flex flex-col justify-center items-start gap-8 md:pb-0'>
                <div id="titleDesc" className='flex flex-col gap-3'>
                 <h1 className='text-[#FF6002] font-semibold font-outfit text-2xl md:text-4xl'>Who we are</h1>
                 <h2 className='text-black font-outfit font-semibold text-3xl md:text-6xl'>We’re Volunteers Community 
@@ -92,7 +91,9 @@ export default function WhoWeAre(){
                 </li>
                </ul>
                <button className='font-outfit bg-[#FF6002] font-semibold h-14 w-32 flex items-center justify-center rounded-lg text-white md:w-52 md:h-16'>About Us</button>
-            </article>
+        </article>
+        </article>
+        {/* <div id='gradient' className='bg-gradient-to-t from-white to-transparent h-40 z-20 absolute -top-52 w-full md:h-96'></div> */}
         </>
     )
 }
