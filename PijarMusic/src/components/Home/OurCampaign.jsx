@@ -1,7 +1,7 @@
 import './OurCampaign.css'
-import RichBrian from '../assets/RichBrian.jpeg'
 import { useEffect, useRef } from "react";
 // import Swipper and modules
+import { useSwiper } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 import { FreeMode } from 'swiper/modules';
@@ -13,8 +13,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
-
+// import assets
+import RichBrian from '../assets/RichBrian.jpeg'
 export default function OurCampaign(){
+    const swiper = useSwiper();
     return(
         <>
         <article className='bg-[#FAFAFA] py-16 flex flex-col justify-center px-7 md:px-28 md:py-[5rem] md:gap-0'>
@@ -34,7 +36,7 @@ export default function OurCampaign(){
         freeMode={true}
         loop={true}
         loopedSlides={4}
-        modules={[Navigation, Pagination, Scrollbar, A11y, FreeMode, Autoplay]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, FreeMode, Autoplay, ]}
         breakpoints={{
             360:{
                 slidesPerView: 1,
@@ -47,19 +49,24 @@ export default function OurCampaign(){
                 // slidesPerGroup: 2,
             }
         }}
-        // spaceBetween={100}
-        // slidesPerView={3}
-        // slidesPerGroup={2}
-        // navigation
+        navigation={
+            {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                clickable : true
+            }
+        }
         pagination={
-            { clickable: true }
+            {   
+                el:'.swiper-pagination',
+                clickable: true 
+            }
         }
         // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
         className='text-black bg-transparent rounded-lg w-full pb-12 relative z-50 mt-10 flex flex-row items-start md:mt-20'
         >
-        
         <SwiperSlide className='flex flex-col justify-center items-center'>
         <div className='bg-white w-full h-full shadow-md rounded-lg p-5 flex flex-col gap-2.5'>
             <div className='w-full h-52 mx-auto rounded-lg overflow-hidden'>
@@ -263,6 +270,11 @@ export default function OurCampaign(){
             </div>
         </div>
         </SwiperSlide>
+        <div id="carouselController">
+            {/* <div className='swiper-button-prev'></div>
+            <div className='swiper-button-next'></div> */}
+            <div className="swiper-pagination"></div>
+        </div>
         </Swiper>
         </article>
         </article>

@@ -1,0 +1,11 @@
+.swiper-nav-btns{
+ color: black;
+ position: absolute;
+ z-index: 50;
+}
+.swiper-pagination :nth-child(even){
+   background-color: #FF6002;
+}
+.swiper-pagination :nth-child(odd){
+    background-color: #FF6002;
+}
