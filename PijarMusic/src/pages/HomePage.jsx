@@ -8,7 +8,7 @@ export default function HomePage(){
         <>
         <div className='container bg-white mx-auto max-w-full flex flex-col h-max'>
         <Header/>
-        <main className='flex flex-col'>
+        <main className='flex flex-col gap-10'>
         <WhoWeAre/>
         <OurCampaign/>
         <LastestArticles/>
