@@ -2,6 +2,7 @@ import './HomePage.css'
 import Header from '../components/Home/Header'
 import WhoWeAre from '../components/Home/WhoWeAre'
 import OurCampaign from '../components/Home/OurCampaign'
+import LastestArticles from '../components/Home/LastestArticles'
 export default function HomePage(){
     return(
         <>
@@ -10,6 +11,7 @@ export default function HomePage(){
         <main className='flex flex-col'>
         <WhoWeAre/>
         <OurCampaign/>
+        <LastestArticles/>
         </main>
         {/* <Swiper
         // install Swiper modules
