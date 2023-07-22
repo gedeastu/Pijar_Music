@@ -47,10 +47,15 @@ export default function LastestArticles(){
     ]
     return(
         <>
-        <div className='w-full flex flex-col mx-auto px-7 gap-10 md:px-28 md:justify-between md:flex-row md:items-center'>
+        <div className='w-full flex flex-col px-7 gap-8 md:px-28'>
+        <div className='flex flex-col gap-3 md:gap-1'>
+        <h1 className='text-[#FF6002] font-outfit font-semibold text-2xl'>Latest News</h1>
+        <h2 className='text-black font-outfit font-semibold text-4xl'>Latest Articles</h2>
+        </div>
+        <div className='w-full flex flex-col mx-auto gap-10 items-center md:justify-between md:gap-0 md:flex-row md:items-center'>
         {dataArticles.map(itemsArticles=>(
-           <div key={itemsArticles.id} className='text-black flex flex-col gap-5 rounded-lg overflow-hidden bg-[#FAFAFA] w-max md:w-[26rem]'>
-            <div className='w-full relative h-56'>
+           <div key={itemsArticles.id} className='text-black flex flex-col gap-5 rounded-lg overflow-hidden bg-[#FAFAFA] w-max md:w-[30rem]'>
+            <div className='w-96 relative h-56 md:w-full'>
             <img src={itemsArticles.image} alt="" className='h-full w-full object-cover'/>
             </div>
             <div className='flex flex-col px-5 gap-4'>
@@ -67,6 +72,7 @@ export default function LastestArticles(){
             </div>
            </div> 
         ))}
+        </div>
         </div>
         </>
     )
