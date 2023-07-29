@@ -123,7 +123,9 @@ export default function OurCampaign(){
         // scrollbar={{ draggable: true }}
         className='text-black bg-transparent rounded-lg w-full pb-12 relative z-50 mt-10 flex flex-row items-start md:mt-20'
         >
-        {DataOurCampaign.map(data =>(
+        {
+        DataOurCampaign.length > 0 ?
+        (DataOurCampaign.map(data =>(
         <SwiperSlide key={data.id} className='flex flex-col justify-center items-center'>
             <div className='bg-white w-full h-full shadow-md rounded-lg p-5 flex flex-col gap-2.5'>
                 <div className='w-full h-52 mx-auto rounded-lg overflow-hidden'>
@@ -153,7 +155,12 @@ export default function OurCampaign(){
                 </div>
             </div>
         </SwiperSlide>
-        ))}
+        )))
+        :
+        (
+        <p className='text-center mx-auto'>No Chart donated yet</p>
+        )
+        }
         {/* <SwiperSlide className='flex flex-col justify-center items-center'>
         <div className='bg-white w-full h-full shadow-md rounded-lg p-5 flex flex-col gap-2.5'>
             <div className='w-full h-52 mx-auto rounded-lg overflow-hidden'>
