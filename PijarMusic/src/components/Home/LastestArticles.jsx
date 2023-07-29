@@ -47,14 +47,16 @@ export default function LastestArticles(){
     ]
     return(
         <>
-        <div className='w-full flex flex-col px-7 gap-8 md:px-28'>
+        <div className='w-full flex flex-col px-7 md:px-28 md:gap-10'>
         <div className='flex flex-col gap-3 md:gap-1'>
-        <h1 className='text-[#FF6002] font-outfit font-semibold text-2xl'>Latest News</h1>
-        <h2 className='text-black font-outfit font-semibold text-4xl'>Latest Articles</h2>
+        <h1 className='text-[#FF6002] font-outfit font-semibold text-2xl md:text-4xl'>Latest News</h1>
+        <h2 className='text-black font-outfit font-semibold text-3xl md:text-6xl'>Latest Articles</h2>
+        <div className='bg-[#FF6002] h-1.5 rounded-full w-72 my-auto md:hidden'></div>
+        <div className='bg-black h-1.5 rounded-full w-60 my-auto md:hidden'></div>
         </div>
-        <div className='w-full flex flex-col mx-auto gap-10 items-center md:justify-between md:gap-0 md:flex-row md:items-center'>
+        <div className='w-full h-[80rem] grid grid-cols-1 place-items-center place-content-evenly md:grid-cols-3 md:place-items-stretch md:h-full md:pb-10'>
         {dataArticles.map(itemsArticles=>(
-           <div key={itemsArticles.id} className='text-black flex flex-col gap-5 rounded-lg overflow-hidden bg-[#FAFAFA] w-max md:w-[30rem]'>
+           <div key={itemsArticles.id} className='text-black flex flex-col rounded-lg overflow-hidden bg-[#FAFAFA] w-max md:w-[30rem]'>
             <div className='w-96 relative h-56 md:w-full'>
             <img src={itemsArticles.image} alt="" className='h-full w-full object-cover'/>
             </div>
