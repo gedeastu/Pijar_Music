@@ -15,17 +15,15 @@ import 'swiper/css/effect-fade';
 
 export default function OurCampaign(){
     const swiper = useSwiper();
-    const [DataOurCampaign,setDataOurCampaign] = useState([])
-
-
+    const [DataOurCampaign,setDataOurCampaign] = useState([]);
+    // get OurCampaign data
     useEffect(()=>{
         const getOurCampaign = async () =>{
             const ourCampaignFromServer = await fetchOurCampaign()
             setDataOurCampaign(ourCampaignFromServer)
         }
         getOurCampaign()
-    },[])
-
+    },[]);
     // fetch OurCampaign data
     const fetchOurCampaign = async () =>{
         const rest = await fetch('http://localhost:5000/OurCampaign')

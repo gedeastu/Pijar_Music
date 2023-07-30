@@ -1,50 +1,9 @@
 import './LastestArticles.css'
 import bali from '../assets/baliEarthquake.jpeg'
 import cianjur from '../assets/cianjurEarthquake.jpeg';
+import { useState } from 'react'; 
 export default function LastestArticles(){    
-    const dataArticles = [
-        {
-            id: 1,
-            image: bali,
-            article1: 'Massive Earthquakes',
-            article2: 'destroying villages',
-            date: '15 Feb, 2023'
-        },
-        {
-            id: 2,
-            image:cianjur,
-            article1: 'Massive Earthquakes',
-            article2: 'destroying villages',
-            article: 'Massive Earthquakes destroying villages',
-            date: '15 Feb, 2023'
-        },
-        {
-            id: 3,
-            image:bali,
-            article1: 'Massive Earthquakes',
-            article2: 'destroying villages',
-            article: 'Massive Earthquakes destroying villages',
-            date: '15 Feb, 2023'
-        },
-        // {
-        //     id: 4,
-        //     image: '../assets',
-        //     article: 'Massive Earthquakes destroying villages',
-        //     date: '15 Feb, 2023'
-        // },
-        // {
-        //     id: 5,
-        //     image: '../assets',
-        //     article: 'Massive Earthquakes destroying villages',
-        //     date: '15 Feb, 2023'
-        // },
-        // {
-        //     id: 6,
-        //     image: '../assets',
-        //     article: 'Massive Earthquakes destroying villages',
-        //     date: '15 Feb, 2023'
-        // },
-    ]
+    const [dataArticles,setDataArticles] = useState([]);
     return(
         <>
         <div className='w-full flex flex-col px-7 md:px-28 md:gap-10'>

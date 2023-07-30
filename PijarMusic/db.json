@@ -20,6 +20,66 @@
     "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"
+  },
+  {
+    "id": 4,
+    "image": "./assets/RichBrian.jpeg",
+    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+    "raiseDonate": "IDR.100K",
+    "targetDonate": "IDR.1000K"
+  },
+  {
+    "id": 5,
+    "image": "./assets/RichBrian.jpeg",
+    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+    "raiseDonate": "IDR.100K",
+    "targetDonate": "IDR.1000K"
+  },
+  {
+    "id": 6,
+    "image": "./assets/RichBrian.jpeg",
+    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+    "raiseDonate": "IDR.100K",
+    "targetDonate": "IDR.1000K"
+  },
+  {
+    "id": 7,
+    "image": "./assets/RichBrian.jpeg",
+    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+    "raiseDonate": "IDR.100K",
+    "targetDonate": "IDR.1000K"
+  },
+  {
+    "id": 8,
+    "image": "./assets/RichBrian.jpeg",
+    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+    "raiseDonate": "IDR.100K",
+    "targetDonate": "IDR.1000K"
   }
-]
+ ],
+ "LastestArticles":[
+    {
+        "id": 1,
+        "image": "",
+        "article1": "Massive Earthquakes",
+        "article2": "destroying villages",
+        "date": "15 Feb, 2023"
+    },
+    {
+        "id": 2,
+        "image": "",
+        "article1": "Massive Earthquakes",
+        "article2": "destroying villages",
+        "article": "Massive Earthquakes destroying villages",
+        "date": "15 Feb, 2023"
+    },
+    {
+        "id": 3,
+        "image": "",
+        "article1": "Massive Earthquakes",
+        "article2": "destroying villages",
+        "article": "Massive Earthquakes destroying villages",
+        "date": "15 Feb, 2023"
+    }
+ ]
 }
