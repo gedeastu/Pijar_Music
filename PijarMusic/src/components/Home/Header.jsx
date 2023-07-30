@@ -1,8 +1,13 @@
 import './Header.css'
+import { useState } from 'react'
 import OurActivity from '../assets/OurActivity.svg'
 // import { Dropdown } from 'react-nested-dropdown';
 // import 'react-nested-dropdown/dist/styles.css';
 export default function Header(){
+    const [iconSwap, setIconSwap] = useState(false);
+    const handleChange = () => {
+        setIconSwap(!iconSwap);
+    }
     // const itemsWhoWeAre = [
     //     {
     //       label: 'Option 1',
@@ -44,13 +49,15 @@ export default function Header(){
             <svg xmlns="http://www.w3.org/2000/svg" height="2em" className='fill-white' viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
             </button> */}
             <ul className='hidden md:flex flex-row items-center gap-10 font-outfit font-[550] text-xl text-white'>
-            <li className='relative'>
+            <li className='relative flex flex-row gap-3 items-center'>
                 <input id='dropdown' type="checkbox" className='peer z-50 absolute w-full right-0 bottom-0 top-0 left-0 opacity-0 transition-all duration-200'/>
-                <label htmlFor='dropdown' className='flex flex-row items-center gap-2.5 relative'>
+                <label htmlFor='dropdown' className=''>
                 <p>Who we are</p>
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" className='fill-white mb-2' viewBox="0 0 320 512"><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
                 </label>
-                <ul className='opacity-0 absolute h-0 z-50 top-9 duration-200 bg-white rounded-md p-3 text-[#FF6002] w-full peer:transition peer-checked:flex peer-checked:h-52 peer-checked:opacity-100 peer-checked:flex-col peer-checked:gap-3 peer-checked:shadow-md'>
+                <svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg" className=' duration-300 peer-checked:rotate-180 peer:transition-all'>
+                <path d="M16.0565 1.23608L8.78617 6.86328L1.5158 1.23608" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <ul className='opacity-0 absolute top-10 h-0 z-50 duration-200 bg-white rounded-md p-3 text-[#FF6002] w-full peer:transition peer-checked:flex peer-checked:h-52 peer-checked:opacity-100 peer-checked:flex-col peer-checked:gap-3 peer-checked:shadow-md'>
                     <li>This We are</li>
                     <li>This We are</li>
                     <li>This We are</li>
@@ -73,13 +80,14 @@ export default function Header(){
                 </button>
             </li>
             </ul>
-            <button htmlFor="drawer" className='relative z-50 peer md:hidden'>
-            <svg xmlns="http://www.w3.org/2000/svg" height="2em" className='fill-white relative z-30 peer-checked:fill-[#FF6002]' viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-            </button>
+            <input id='drawer' type="checkbox" checked={iconSwap} onChange={handleChange} className='hidden peer'/>
+            <label htmlFor="drawer" className='relative z-50 md:hidden'>
+            {iconSwap ? (<svg xmlns="http://www.w3.org/2000/svg" height="1em" className='fixed' viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>):(<svg xmlns="http://www.w3.org/2000/svg" height="2em" className='fill-white relative z-30 peer-checked:fill-[#FF6002]' viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>)}
+            </label>
             {/* <svg xmlns="http://www.w3.org/2000/svg" height="1.7em" className='fill-[#FF6002] z-40 top-5 fixed invisible peer-checked:visible' viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg> */}
-            <div className='z-40 fixed -top-96 left-0 w-screen h-72 bg-white shadow-2xl peer-focus:top-0 peer:transition-all duration-200'>  
+            <div className='z-40 fixed -top-96 left-0 w-screen h-72 bg-white shadow-2xl peer-checked:top-0 peer:transition-all duration-200'>  
             </div>
-            <div className="z-30 fixed left-0 top-0 bg-gray-900 bg-opacity-30 h-screen w-screen opacity-0 peer-focus:opacity-100 peer:transition-all duration-200"></div>
+            <div className="z-30 fixed left-0 top-0 bg-gray-900 bg-opacity-30 h-screen w-screen opacity-0 peer-checked:opacity-100 peer:transition-all duration-200"></div>
             </div>
             </nav>
             <div className='flex flex-col px-7 items-center gap-14 md:flex-row md:items-center md:px-28 md:justify-between'>
