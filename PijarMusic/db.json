@@ -60,14 +60,14 @@
  "LastestArticles":[
     {
         "id": 1,
-        "image": "",
+        "image": "./assets/baliEarthquake.jpeg",
         "article1": "Massive Earthquakes",
         "article2": "destroying villages",
         "date": "15 Feb, 2023"
     },
     {
         "id": 2,
-        "image": "",
+        "image": "./assets/cianjurEarthquake.jpeg",
         "article1": "Massive Earthquakes",
         "article2": "destroying villages",
         "article": "Massive Earthquakes destroying villages",
@@ -75,7 +75,7 @@
     },
     {
         "id": 3,
-        "image": "",
+        "image": "./assets/baliEarthquake.jpeg",
         "article1": "Massive Earthquakes",
         "article2": "destroying villages",
         "article": "Massive Earthquakes destroying villages",

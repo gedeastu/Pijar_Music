@@ -16,6 +16,12 @@ import 'swiper/css/effect-fade';
 export default function OurCampaign(){
     const swiper = useSwiper();
     const [DataOurCampaign,setDataOurCampaign] = useState([]);
+    // fetch OurCampaign data
+    const fetchOurCampaign = async () =>{
+        const rest = await fetch('http://localhost:5000/OurCampaign')
+        const data = await rest.json()
+        return data
+    }
     // get OurCampaign data
     useEffect(()=>{
         const getOurCampaign = async () =>{
@@ -24,12 +30,6 @@ export default function OurCampaign(){
         }
         getOurCampaign()
     },[]);
-    // fetch OurCampaign data
-    const fetchOurCampaign = async () =>{
-        const rest = await fetch('http://localhost:5000/OurCampaign')
-        const data = await rest.json()
-        return data
-    }
     return(
         <>
         <article className='bg-[#FAFAFA] py-16 flex flex-col justify-center px-7 md:px-28 md:py-[5rem] md:gap-0'>

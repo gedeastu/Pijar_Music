@@ -1,9 +1,24 @@
 import './LastestArticles.css'
 import bali from '../assets/baliEarthquake.jpeg'
 import cianjur from '../assets/cianjurEarthquake.jpeg';
-import { useState } from 'react'; 
+import { useState,useEffect } from 'react'; 
 export default function LastestArticles(){    
     const [dataArticles,setDataArticles] = useState([]);
+    //Fetch LatestArticles data
+    const fetchLatestArticles = async ()=>{
+        const rest = await fetch ('http://localhost:5000/LastestArticles');
+        const data = rest.json();
+        return data;
+    }
+    
+    //Get LatestArticles data
+    useEffect(()=>{
+        const getLatestArticles = async () => {
+            const latestArticlesFromServer = await fetchLatestArticles()
+            setDataArticles(latestArticlesFromServer)
+        }
+        getLatestArticles()
+    },[]);
     return(
         <>
         <div className='w-full flex flex-col px-7 md:px-28 md:gap-10'>
@@ -14,7 +29,7 @@ export default function LastestArticles(){
         <div className='bg-black h-1.5 rounded-full w-60 my-auto md:hidden'></div>
         </div>
         <div className='w-full h-[80rem] grid grid-cols-1 place-items-center place-content-evenly md:grid-cols-3 md:place-items-stretch md:h-full md:pb-10'>
-        {dataArticles.map(itemsArticles=>(
+        {dataArticles.length > 0 ? (dataArticles.map(itemsArticles=>(
            <div key={itemsArticles.id} className='text-black flex flex-col rounded-lg overflow-hidden bg-[#FAFAFA] w-max md:w-[30rem]'>
             <div className='w-96 relative h-56 md:w-full'>
             <img src={itemsArticles.image} alt="" className='h-full w-full object-cover'/>
@@ -32,7 +47,7 @@ export default function LastestArticles(){
             <p className='font-plusJakartaSans'>{itemsArticles.date}</p>
             </div>
            </div> 
-        ))}
+        ))) : (<p className='text-black'>No Arcticle here!</p>)}
         </div>
         </div>
         </>
