@@ -21,7 +21,7 @@ export default function LastestArticles(){
     },[]);
     return(
         <>
-        <div className='w-full flex flex-col px-7 py-8 md:px-28 md:py-16'>
+        <div className='w-full flex flex-col px-7 py-8 md:px-28 md:py-14'>
         <div className='flex flex-row items-end justify-between gap-3 md:gap-1 md:pb-16'>
         <div id='title' className='flex flex-col gap-3'>
         <h1 className='text-[#FF6002] font-outfit font-semibold text-2xl md:text-4xl'>Latest News</h1>
