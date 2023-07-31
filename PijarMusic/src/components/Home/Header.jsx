@@ -81,16 +81,16 @@ export default function Header(){
             </li>
             </ul>
             <input id='drawer' type="checkbox" checked={iconSwap} onChange={handleChange} className='hidden peer'/>
-            <label htmlFor="drawer" className='relative z-50 md:hidden'>
+            <label htmlFor="drawer" className='relative z-[99] md:hidden'>
             {iconSwap ? (<svg xmlns="http://www.w3.org/2000/svg" height="2em" className='fixed fill-[#FF6002]' viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>):(<svg xmlns="http://www.w3.org/2000/svg" height="2em" className='fill-white relative z-30' viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>)}
             </label>
             {/* <svg xmlns="http://www.w3.org/2000/svg" height="1.7em" className='fill-[#FF6002] z-40 top-5 fixed invisible peer-checked:visible' viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg> */}
-            <div className='z-40 fixed -top-96 left-0 w-screen h-72 bg-white shadow-2xl peer-checked:top-0 peer:transition-all duration-200'>  
+            <div className='z-[70] fixed -top-96 left-0 w-screen h-72 bg-white shadow-2xl peer-checked:top-0 peer:transition-all duration-200'>  
             </div>
-            <div className="z-30 fixed left-0 top-0 bg-gray-900 bg-opacity-30 h-screen w-screen opacity-0 peer-checked:opacity-100 peer:transition-all duration-200"></div>
+            <div className="-z-30 fixed left-0 top-0 bg-gray-900 bg-opacity-30 h-screen w-screen opacity-0 peer-checked:opacity-100 peer-checked:z-50 peer:transition-all duration-200"></div>
             </div>
             </nav>
-            <div className='flex flex-col px-7 items-center gap-14 md:flex-row md:items-center md:px-28 md:justify-between'>
+            <div className='flex flex-col px-7 relative z-40 items-center gap-14 md:flex-row md:items-center md:px-28 md:justify-between'>
             <article className='text-white flex flex-col items-start justify-center h-[43rem] gap-9 font-outfit'>
                 <h1 className='font-semibold'>TRUSTED MUSIC COMPANY</h1>
                 <h2 className='font-bold text-5xl md:text-7xl'>Let's Help And Make

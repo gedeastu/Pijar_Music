@@ -21,13 +21,13 @@ export default function LastestArticles(){
     },[]);
     return(
         <>
-        <div className='w-full flex flex-col px-7 py-8 md:px-28 md:py-14'>
+        <div className='w-full flex relative z-40 flex-col px-7 py-8 md:px-28 md:py-14'>
         <div className='flex flex-row items-end justify-between gap-3 md:gap-1 md:pb-16'>
         <div id='title' className='flex flex-col gap-3'>
         <h1 className='text-[#FF6002] font-outfit font-semibold text-2xl md:text-4xl'>Latest News</h1>
         <h2 className='text-black font-outfit font-semibold text-3xl md:text-6xl'>Latest Articles</h2>
         </div>
-        <button className='uppercase text-[#FF6002] border-2 border-[#FF6002] rounded-xl px-5 py-1.5 font-normal font-outfit md:px-10 md:py-2.5 md:font-bold'>
+        <button className='uppercase text-[#FF6002] border-2 border-[#FF6002] rounded-xl px-5 py-1.5 font-normal font-outfit transition-all duration-200 hover:border-none hover:bg-[#FF6002] hover:text-white md:px-10 md:py-2.5 md:font-bold'>
         All News
         </button>
         </div>
@@ -52,13 +52,14 @@ export default function LastestArticles(){
            </div> 
         ))) : (<p className='text-black'>No Arcticle here!</p>)}
         </div>
+
         <div className='bg-[#FAFAFA] px-5 py-8 flex flex-col rounded-xl gap-5 md:px-14 md:py-12 md:flex md:flex-row md:justify-between'>
         <div id="title" className='font-outfit text-black text-center flex flex-col gap-3 md:text-left'>
         <h1 className='font-bold text-4xl text-[#1D1D1D]'>Newsletter</h1>
         <h2 className='text-[#404040] text-opacity-50'>Update charity events and have musical experience together</h2>
         </div>
         <div id="input" className='flex flex-row items-center gap-5 font-outfit md:gap-7'>
-        <input type="email" className='bg-white w-80 rounded-xl h-12 pl-4 border boder-[#DADADA] placeholder:text-[#20003A] placeholder:opacity-50' placeholder='Your Email'/>
+        <input type="email" className='bg-white text-black w-80 rounded-xl h-12 pl-4 border boder-[#DADADA] placeholder:text-[#20003A] placeholder:opacity-50 focus:outline-[#FF6002]' placeholder='Your Email'/>
         <button className='bg-[#FF6002] h-12 w-32 rounded-xl font-semibold'>Subcribe</button>
         </div>
         </div>
