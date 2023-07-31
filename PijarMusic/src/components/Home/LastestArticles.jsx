@@ -1,24 +1,35 @@
 import './LastestArticles.css'
-import bali from '../assets/baliEarthquake.jpeg'
-import cianjur from '../assets/cianjurEarthquake.jpeg';
-import { useState,useEffect } from 'react'; 
-export default function LastestArticles(){    
+import { useState,useEffect } from 'react';
+import axios from 'axios'
+
+
+export default function LastestArticles(){
     const [dataArticles,setDataArticles] = useState([]);
-    //Fetch LatestArticles data
-    const fetchLatestArticles = async ()=>{
-        const rest = await fetch ('http://localhost:5000/LastestArticles');
-        const data = rest.json();
-        return data;
-    }
-    
-    //Get LatestArticles data
     useEffect(()=>{
-        const getLatestArticles = async () => {
-            const latestArticlesFromServer = await fetchLatestArticles()
-            setDataArticles(latestArticlesFromServer)
-        }
-        getLatestArticles()
-    },[]);
+        const fetchData = async () => {
+         try{
+            const response = await axios.get(process.env.REACT_APP_API_URL);
+            setDataArticles(response.data)
+         } catch (error){
+            console.error("Error fetching data : ",error)
+         }
+        };
+        fetchData();
+    },[])
+    //Fetch LatestArticles data
+    // const fetchLatestArticles = async ()=>{
+    //     const rest = await fetch ('http://localhost:5000/LastestArticles');
+    //     const data = rest.json();
+    //     return data;
+    // }
+    //Get LatestArticles data
+    // useEffect(()=>{
+    //     const getLatestArticles = async () => {
+    //         const latestArticlesFromServer = await fetchLatestArticles()
+    //         setDataArticles(latestArticlesFromServer)
+    //     }
+    //     getLatestArticles()
+    // },[]);
     return(
         <>
         <div className='w-full flex relative z-40 flex-col px-7 py-8 md:px-28 md:py-14'>
