@@ -88,7 +88,7 @@ export default function OurCampaign(){
             }
         }
         // scrollbar={{ draggable: true }}
-        className='text-black bg-transparent rounded-lg w-full pb-12 relative z-50 mt-10 flex flex-row items-start md:mt-20'
+        className='text-black bg-transparent rounded-lg w-full pb-12 relative z-40 mt-10 flex flex-row items-start md:mt-20'
         >
         {DataOurCampaign.length > 0 ?
         (DataOurCampaign.map(data =>(
