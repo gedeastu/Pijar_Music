@@ -1,21 +1,20 @@
 import './LastestArticles.css'
 import { useState,useEffect } from 'react';
-import axios from 'axios'
-
-
+import axios from 'axios';
+import { LastestArticlesGetPosts } from '../../../api/api';
 export default function LastestArticles(){
     const [dataArticles,setDataArticles] = useState([]);
+    const fetchData = async () => {
+        try{
+            const data = await LastestArticlesGetPosts();
+            setDataArticles(data);
+        } catch (error) {
+            console.error('Error fetching data : ', error);
+        }
+    }
     useEffect(()=>{
-        const fetchData = async () => {
-         try{
-            const response = await axios.get('http://localhost:5000/LastestArticles/');
-            setDataArticles(response.data)
-         } catch (error){
-            console.error("Error fetching data : ",error)
-         }
-        };
         fetchData();
-    },[])
+    },[]);
     //Fetch LatestArticles data
     // const fetchLatestArticles = async ()=>{
     //     const rest = await fetch ('http://localhost:5000/LastestArticles');

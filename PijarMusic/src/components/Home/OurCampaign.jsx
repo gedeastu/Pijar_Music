@@ -13,23 +13,35 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
 
+import { OurCampaignGetPosts } from '../../../api/api';
 export default function OurCampaign(){
     const swiper = useSwiper();
     const [DataOurCampaign,setDataOurCampaign] = useState([]);
-    // fetch OurCampaign data
-    const fetchOurCampaign = async () =>{
-        const rest = await fetch('http://localhost:5000/OurCampaign')
-        const data = await rest.json()
-        return data
-    }
-    // get OurCampaign data
-    useEffect(()=>{
-        const getOurCampaign = async () =>{
-            const ourCampaignFromServer = await fetchOurCampaign()
-            setDataOurCampaign(ourCampaignFromServer)
+    const fetchData = async () => {
+        try{
+            const data = await OurCampaignGetPosts();
+            setDataOurCampaign(data);
+        } catch (error) {
+            console.error('Error fetching data : ', error);
         }
-        getOurCampaign()
+    }
+    useEffect(()=>{
+        fetchData();
     },[]);
+    // fetch OurCampaign data
+    // const fetchOurCampaign = async () =>{
+    //     const rest = await fetch('http://localhost:5000/OurCampaign')
+    //     const data = await rest.json()
+    //     return data
+    // }
+    // get OurCampaign data
+    // useEffect(()=>{
+    //     const getOurCampaign = async () =>{
+    //         const ourCampaignFromServer = await fetchOurCampaign()
+    //         setDataOurCampaign(ourCampaignFromServer)
+    //     }
+    //     getOurCampaign()
+    // },[]);
     return(
         <>
         <article className='bg-[#FAFAFA] py-16 flex flex-col justify-center px-7 md:px-28 md:py-[5rem] md:gap-0'>
