@@ -81,5 +81,25 @@
         "article": "Massive Earthquakes destroying villages",
         "date": "15 Feb, 2023"
     }
+ ],
+ "WhatPeopleSay":[
+  {
+    "id":1,
+    "image":"",
+    "name":"Andrew McCrea",
+    "profession":"Musicians - Artist"
+  },
+  {
+    "id":2,
+    "image":"",
+    "name":"Andrew McCrea",
+    "profession":"Musicians - Artist"
+  },
+  {
+    "id":3,
+    "image":"",
+    "name":"Andrew McCrea",
+    "profession":"Musicians - Artist"
+  }
  ]
 }

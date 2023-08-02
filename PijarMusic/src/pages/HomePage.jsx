@@ -3,6 +3,7 @@ import Header from '../components/Home/Header'
 import WhoWeAre from '../components/Home/WhoWeAre'
 import OurCampaign from '../components/Home/OurCampaign'
 import LastestArticles from '../components/Home/LastestArticles'
+import WhatPeopleSay from '../components/Home/WhatPeopleSay'
 export default function HomePage(){
     return(
         <>
@@ -12,6 +13,7 @@ export default function HomePage(){
         <WhoWeAre/>
         <OurCampaign/>
         <LastestArticles/>
+        <WhatPeopleSay/>
         </main>
         {/* <Swiper
         // install Swiper modules

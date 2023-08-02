@@ -31,7 +31,7 @@ export default function LastestArticles(){
     // },[]);
     return(
         <>
-        <div className='w-full flex relative z-40 flex-col px-7 py-8 md:px-28 md:py-14'>
+        <article className='w-full flex relative z-40 flex-col px-7 py-8 md:px-28 md:py-14'>
         <div className='flex flex-row items-end justify-between gap-3 md:gap-1 md:pb-16'>
         <div id='title' className='flex flex-col gap-3'>
         <h1 className='text-[#FF6002] font-outfit font-semibold text-2xl md:text-4xl'>Latest News</h1>
@@ -73,7 +73,7 @@ export default function LastestArticles(){
         <button className='bg-[#FF6002] h-12 w-32 rounded-xl font-semibold'>Subcribe</button>
         </div>
         </div>
-        </div>
+        </article>
         </>
     )
 }
