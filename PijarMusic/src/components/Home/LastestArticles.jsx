@@ -37,7 +37,7 @@ export default function LastestArticles(){
         <h1 className='text-[#FF6002] font-outfit font-semibold text-2xl md:text-4xl'>Latest News</h1>
         <h2 className='text-black font-outfit font-semibold text-3xl md:text-6xl'>Latest Articles</h2>
         </div>
-        <button className='uppercase text-[#FF6002] border-2 border-[#FF6002] rounded-xl px-5 py-1.5 font-normal font-outfit transition-all duration-200 hover:border-none hover:bg-[#FF6002] hover:text-white md:px-10 md:py-2.5 md:font-bold'>
+        <button className='uppercase text-[#FF6002] border-2 border-[#FF6002] rounded-xl px-5 py-1.5 font-bold font-outfit transition-all duration-200 hover:border-none hover:bg-[#FF6002] hover:text-white md:px-10 md:py-2.5'>
         All News
         </button>
         </div>

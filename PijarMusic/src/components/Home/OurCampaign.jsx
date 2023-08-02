@@ -57,7 +57,6 @@ export default function OurCampaign(){
             delay: 5000,
             disableOnInteraction: false,
         }}
-        effect="fade"
         freeMode={true}
         loop={true}
         loopedSlides={4}
