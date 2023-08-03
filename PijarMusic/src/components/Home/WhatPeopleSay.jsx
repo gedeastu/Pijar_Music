@@ -21,27 +21,38 @@ export default function WhatPeopleSay(){
     },[]);
     return(
         <>
-         <article className='bg-[#FAFAFA] w-full h-screen relative'>
+         <article className='bg-[#FAFAFA] w-full h-full md:h-screen relative'>
          <Swiper
          modules={[EffectFade, Autoplay]}
          loop = {true}
          autoplay = {
-            { delay: 3000 }
+            { delay: 10000 }
         }
          effect="fade"
          className='flex flex-row items-center h-full'
          >
          {DataWhatPeopleSay.length > 0 ? (
          (DataWhatPeopleSay.map(data => (
-            <SwiperSlide key={data.id} className='flex flex-col items-center'>
-                <div className='w-[70rem] flex flex-row items-center justify-between my-auto'>
-                <div className='flex flex-col items-center h-[40rem] relative'>
+            <SwiperSlide key={data.id} className='flex h-full flex-col items-center'>
+                <div className='h-full md:w-[70rem] md:flex md:flex-row md:items-center md:justify-between md:my-auto'>
+                <div id='banner' className='scale-90 flex flex-col items-center h-[40rem] relative md:scale-100'>
                 <div className='bg-[#FF6002] w-[28rem] flex flex-col bottom-0 rounded-t-[5rem] items-center h-[30rem] absolute'></div>
-                <img src={data.image} alt="" className='w-96 relative h-full rounded-tl-2xl rounded-tr-2xl  object-cover object-center'/>
+                <img src={data.image} alt="" className='w-96 relative h-full grayscale rounded-tl-2xl rounded-tr-2xl  object-cover'/>
                 </div>
-                <h1 className='text-black font-outfit font-bold text-6xl'>What People Say about
-                <br />
-                <span className='text-[#FF6002]'>Our Organization</span></h1>
+                <div id='desc' className='flex flex-col gap-10'>
+                <div id='title' className='text-black text-[2.5rem] font-outfit font-bold flex flex-col md:gap-[1.5rem] md:text-6xl'>
+                <h1 className='text-[#FF6002] text-xl md:text-3xl'>Testimonials</h1>
+                <h1>What People Say about</h1>
+                <h2 className='text-[#FF6002] '>Our Organization</h2>
+                </div>
+                <div id="desc" className='w-[25rem] md:w-[40rem] font-outfit bg-[#FAFAFA] py-5 text-center px-2 rounded-xl shadow-sm text-lg'>
+                <p className='text-black'>"{data.desc}"</p>
+                </div>
+                <div id='name' className='flex flex-col bg-[#FAFAFA] shadow-sm py-3 px-1 w-max'>
+                <p className='text-black'>by.</p>
+                <p className='text-black'>{data.name}</p>
+                </div>
+                </div>
                 </div>
             </SwiperSlide>
          )))

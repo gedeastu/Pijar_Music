@@ -92,14 +92,16 @@
   },
   {
     "id":2,
-    "image":"./src/assets/RichBrian.jpeg",
-    "name":"Andrew McCrea",
+    "image":"./src/assets/alexTurnerVertical.jpeg",
+    "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda eius dicta libero enim quas distinctio unde voluptatem sequi pariatur quibusdam, fugiat iure. Sunt fugiat adipisci, officia eligendi eius sint..",
+    "name":"Alex Turner",
     "profession":"Musicians - Artist"
   },
   {
     "id":3,
-    "image":"./src/assets/theWeeknd.jpeg",
-    "name":"Andrew McCrea",
+    "image":"./src/assets/fatthia.jpeg",
+    "desc" : "Thanks to the incredible efforts of this music organization, lives are being changed through their unwavering commitment to charity. Their passion for music has become a powerful force for making a difference in our world.",
+    "name":"Fathia Izzati",
     "profession":"Musicians - Artist"
   }
  ]
