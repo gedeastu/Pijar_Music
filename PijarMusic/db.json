@@ -9,49 +9,49 @@
   },
   {
     "id": 2,
-    "image": "./src/assets/RichBrian.jpeg",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+    "image": "./src/assets/alexTurner.jpeg",
+    "desc": "Alex Turner make charity  foods & drinks to help Disasters victim",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"
   },
   {
     "id": 3,
-    "image": "./src/assets/RichBrian.jpeg",
+    "image": "./src/assets/niki.jpeg",
     "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"
   },
   {
     "id": 4,
-    "image": "./src/assets/RichBrian.jpeg",
+    "image": "./src/assets/lolotBand.jpeg",
     "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"
   },
   {
     "id": 5,
-    "image": "./src/assets/RichBrian.jpeg",
+    "image": "./src/assets/gangga.jpeg",
     "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"
   },
   {
     "id": 6,
-    "image": "./src/assets/RichBrian.jpeg",
+    "image": "./src/assets/blackpink.webp",
     "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"
   },
   {
     "id": 7,
-    "image": "./src/assets/RichBrian.jpeg",
+    "image": "./src/assets/pamungkas.jpeg",
     "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"
   },
   {
     "id": 8,
-    "image": "./src/assets/RichBrian.jpeg",
+    "image": "./src/assets/lanaDelRey.jpeg",
     "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
     "raiseDonate": "IDR.100K",
     "targetDonate": "IDR.1000K"

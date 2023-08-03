@@ -93,7 +93,7 @@ export default function OurCampaign(){
         (DataOurCampaign.map(data =>(
             <SwiperSlide key={data.id} className='flex flex-col justify-center items-center'>
                 <div className='bg-white w-full h-full shadow-md rounded-lg p-5 flex flex-col gap-2.5'>
-                    <div className='w-full h-52 mx-auto rounded-lg overflow-hidden'>
+                    <div className='w-full h-60 mx-auto rounded-lg overflow-hidden'>
                     <img src={data.image} alt="" className='w-full h-full object-cover object-top'/>
                     </div>
                     <div>
