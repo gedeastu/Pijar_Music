@@ -85,19 +85,20 @@
  "WhatPeopleSay":[
   {
     "id":1,
-    "image":"",
+    "image":"./src/assets/andrew.png",
+    "desc" : "Thanks to the incredible efforts of this music organization, lives are being changed through their unwavering commitment to charity. Their passion for music has become a powerful force for making a difference in our world.",
     "name":"Andrew McCrea",
     "profession":"Musicians - Artist"
   },
   {
     "id":2,
-    "image":"",
+    "image":"./src/assets/RichBrian.jpeg",
     "name":"Andrew McCrea",
     "profession":"Musicians - Artist"
   },
   {
     "id":3,
-    "image":"",
+    "image":"./src/assets/theWeeknd.jpeg",
     "name":"Andrew McCrea",
     "profession":"Musicians - Artist"
   }

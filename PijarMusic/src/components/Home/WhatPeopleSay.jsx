@@ -1,19 +1,51 @@
 import './WhatPeopleSay.css'
 import { Swiper,SwiperSlide  } from 'swiper/react';
-import { EffectFade } from 'swiper/modules';
+import { EffectFade,Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
-export default function WhatPeopleSay(){  
+import { WhatsPeopleSayGetPosts } from '../../../api/api';
+import { useState,useEffect } from 'react';
+
+export default function WhatPeopleSay(){
+    const [DataWhatPeopleSay,setDataWhatPeopleSay] = useState([]);
+    const fetchData = async () => {
+        try{
+            const data = await WhatsPeopleSayGetPosts();
+            setDataWhatPeopleSay(data);
+        } catch (error) {
+            console.error('Error fetching data : ', error);
+        }
+    }
+    useEffect(()=>{
+        fetchData();
+    },[]);
     return(
         <>
-         <article className='bg-[#FAFAFA] w-full h-[40rem] relative'>
+         <article className='bg-[#FAFAFA] w-full h-screen relative'>
          <Swiper
-         modules={EffectFade}
+         modules={[EffectFade, Autoplay]}
+         loop = {true}
+         autoplay = {
+            { delay: 3000 }
+        }
          effect="fade"
+         className='flex flex-row items-center h-full'
          >
-            
+         {DataWhatPeopleSay.length > 0 ? (
+         (DataWhatPeopleSay.map(data => (
+            <SwiperSlide key={data.id} className='flex flex-col items-center'>
+                <div className='w-[70rem] flex flex-row items-center justify-between my-auto'>
+                <div className='flex flex-col items-center h-[40rem] relative'>
+                <div className='bg-[#FF6002] w-[28rem] flex flex-col bottom-0 rounded-t-[5rem] items-center h-[30rem] absolute'></div>
+                <img src={data.image} alt="" className='w-96 relative h-full rounded-tl-2xl rounded-tr-2xl  object-cover object-center'/>
+                </div>
+                <h1 className='text-black font-outfit font-bold text-6xl'>What People Say about
+                <br />
+                <span className='text-[#FF6002]'>Our Organization</span></h1>
+                </div>
+            </SwiperSlide>
+         )))
+         ):(<div className='text-black'><p>No more Tetimonal happens</p></div>)}
          </Swiper>
          <svg className='right-0 absolute bottom-32' width="205" height="367" viewBox="0 0 205 367" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.6603 142.046C9.59975 142.064 7.57096 141.537 5.77995 140.518C4.46629 139.78 3.31308 138.787 2.38781 137.598C1.46253 136.408 0.783765 135.046 0.391229 133.591C-0.00130671 132.136 -0.0997316 130.618 0.101714 129.124C0.30316 127.631 0.800431 126.192 1.56443 124.893C16.2882 100.318 61.0858 42.958 158.837 42.958C201.198 42.958 238.352 54.0849 269.212 76.0178C294.612 94.0178 308.847 114.393 315.628 124.206C316.489 125.443 317.092 126.84 317.405 128.313C317.717 129.787 317.731 131.309 317.447 132.788C317.162 134.268 316.584 135.675 315.747 136.928C314.91 138.181 313.831 139.254 312.574 140.083C310.003 141.782 306.872 142.414 303.844 141.843C300.816 141.273 298.129 139.546 296.353 137.028C284.081 119.38 246.66 65.6775 158.837 65.6775C73.1138 65.6775 34.3569 115.095 21.7333 136.288C20.719 138.057 19.2505 139.524 17.4797 140.536C15.7089 141.549 13.6999 142.07 11.6603 142.046Z" fill="#EAEAEA" fill-opacity="0.44"/>
