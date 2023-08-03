@@ -93,7 +93,7 @@
   {
     "id":2,
     "image":"./src/assets/alexTurnerVertical.jpeg",
-    "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda eius dicta libero enim quas distinctio unde voluptatem sequi pariatur quibusdam, fugiat iure. Sunt fugiat adipisci, officia eligendi eius sint..",
+    "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda eius dicta libero enim quas distinctio unde voluptatem sequi pariatur quibusdam, fugiat iure. Sunt fugiat adipisci, officia eligendi eius sint.",
     "name":"Alex Turner",
     "profession":"Musicians - Artist"
   },

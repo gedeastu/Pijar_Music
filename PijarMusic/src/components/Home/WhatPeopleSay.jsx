@@ -39,18 +39,18 @@ export default function WhatPeopleSay(){
                 <div className='bg-[#FF6002] w-[28rem] flex flex-col bottom-0 rounded-t-[5rem] items-center h-[30rem] absolute'></div>
                 <img src={data.image} alt="" className='w-96 relative h-full grayscale rounded-tl-2xl rounded-tr-2xl  object-cover'/>
                 </div>
-                <div id='desc' className='flex flex-col gap-10'>
+                <div id='desc' className='flex flex-col gap-5 mb-5 md:gap-14 md:mb-0'>
                 <div id='title' className='text-black text-[2.5rem] font-outfit font-bold flex flex-col md:gap-[1.5rem] md:text-6xl'>
                 <h1 className='text-[#FF6002] text-xl md:text-3xl'>Testimonials</h1>
                 <h1>What People Say about</h1>
                 <h2 className='text-[#FF6002] '>Our Organization</h2>
                 </div>
-                <div id="desc" className='w-[25rem] md:w-[40rem] font-outfit bg-[#FAFAFA] py-5 text-center px-2 rounded-xl shadow-sm text-lg'>
-                <p className='text-black'>"{data.desc}"</p>
+                <div id="desc" className='w-[25rem] h-72 font-outfit flex flex-col gap-5 border-2 border-[#FF6002]/20 bg-[#FAFAFA] py-6 text-left px-6 rounded-xl shadow-sm md:w-[40rem] md:h-max'>
+                <p className='text-black text-xl'>"{data.desc}"</p>
+                <div id='name' className='flex flex-col text-left'>
+                <p className='text-black font-semibold text-lg'>{data.name}</p>
+                <p className='text-black'>{data.profession}</p>
                 </div>
-                <div id='name' className='flex flex-col bg-[#FAFAFA] shadow-sm py-3 px-1 w-max'>
-                <p className='text-black'>by.</p>
-                <p className='text-black'>{data.name}</p>
                 </div>
                 </div>
                 </div>
