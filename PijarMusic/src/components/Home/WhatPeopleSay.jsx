@@ -34,7 +34,7 @@ export default function WhatPeopleSay(){
          {DataWhatPeopleSay.length > 0 ? (
          (DataWhatPeopleSay.map(data => (
             <SwiperSlide key={data.id} className='flex h-full flex-col items-center'>
-                <div className='h-full md:w-[70rem] md:flex md:flex-row md:items-center md:justify-between md:my-auto'>
+                <div className='h-full flex flex-col md:w-[70rem] md:flex md:flex-row md:items-center md:justify-between md:my-auto'>
                 <div id='banner' className='scale-90 flex flex-col items-center h-[40rem] relative md:scale-100'>
                 <div className='bg-[#FF6002] w-[28rem] flex flex-col bottom-0 rounded-t-[5rem] items-center h-[30rem] absolute'></div>
                 <img src={data.image} alt="" className='w-96 relative h-full grayscale rounded-tl-2xl rounded-tr-2xl  object-cover'/>
