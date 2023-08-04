@@ -32,7 +32,8 @@ export default function Header(){
     //   ];
     return(
         <>
-        <header id='header' className='max-w-full h-[95rem] bg-cover bg-center relative md:h-screen'>
+        <header className='max-w-full relative'>
+            <div className='h-[95rem] md:h-screen'>
             <nav className='relative px-7 py-7 flex flex-row-reverse items-center justify-between md:flex-row md:px-28 md:py-7'>
             <div id="logo" className='flex flex-row-reverse items-center gap-2 md:flex-row md:scale-125'>
             <svg className='' width="36" height="48" viewBox="0 0 36 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,6 +208,7 @@ export default function Header(){
              </div> */}
             </div>
             <div id='gradient' className='bg-gradient-to-t from-white to-transparent h-40 opacity-25 absolute bottom-0 w-full md:h-96'></div>
+            </div>
         </header>
         </>
     )
