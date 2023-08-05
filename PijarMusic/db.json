@@ -104,5 +104,27 @@
     "name":"Fathia Izzati",
     "profession":"Musicians - Artist"
   }
+ ],
+ "CTA":[
+   {
+    "id":1,
+    "number":"20M",
+    "desc":"Number of Supporters"
+   },
+   {
+    "id":2,
+    "number":"15K+",
+    "desc":"Volunteers Worldwide"
+   },
+   {
+    "id":3,
+    "number":"68K+",
+    "desc":"We've Helped Raise"
+   },
+   {
+    "id":4,
+    "number":"10M+",
+    "desc":"Projects Funded"
+   }
  ]
 }
