@@ -4,7 +4,7 @@ import mcr from '../assets/mcr.jpeg'
 export default function WhoWeAre(){  
     return(
         <>
-        <article className='h-max  w-full flex flex-col gap-40 py-20 px-7 md:px-28 md:py-[11.5rem] md:flex-row md:items-center md:gap-0 md:justify-between'>
+        <article className='h-max  w-full flex flex-col gap-40 py-20 px-7 md:px-28 md:py-[10rem] md:flex-row md:items-center md:gap-0 md:justify-between'>
         <aside className='relative pl-8 flex flex-row items-center'>
                 <div className='w-[20rem] h-[25rem] relative md:w-[30rem] md:h-[35rem]'>
                 <svg className='absolute top-10 z-20 -left-7 h-16 md:h-24 md:-left-10' viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
