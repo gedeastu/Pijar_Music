@@ -41,10 +41,11 @@ export default function LastestArticles(){
         All News
         </button>
         </div>
-        <div className='w-full h-[80rem] grid grid-cols-1 place-items-center place-content-evenly md:grid-cols-3 md:place-items-stretch md:h-full md:pb-10 md:gap-10'>
+        <div className='flex justify-center'>
+        <div className='w-[30rem] h-[80rem] flex flex-col items-center place-items-center place-content-evenly md:grid md:grid-cols-3 md:place-items-stretch md:h-full md:w-full md:pb-10 md:gap-10'>
         {dataArticles.length > 0 ? (dataArticles.map(itemsArticles=>(
-           <div key={itemsArticles.id} className='text-black flex flex-col rounded-lg overflow-hidden bg-[#FAFAFA] w-max md:w-full md:h-[25rem]'>
-            <div className='w-96 relative h-56 md:w-full'>
+           <div key={itemsArticles.id} className='text-black flex flex-col rounded-lg overflow-hidden bg-[#FAFAFA] w-full md:h-[25rem]'>
+            <div className='w-full relative h-56 md:w-full'>
             <img src={itemsArticles.image} alt="" className='h-full w-full object-cover'/>
             </div>
             <div className='flex flex-col justify-center h-full px-5 gap-4'>
@@ -61,6 +62,7 @@ export default function LastestArticles(){
             </div>
            </div> 
         ))) : (<p className='text-black'>No Arcticle here!</p>)}
+        </div>
         </div>
 
         <div className='bg-[#FAFAFA] px-5 py-8 flex flex-col rounded-xl gap-5 md:px-14 md:py-12 md:flex md:flex-row md:justify-between'>
