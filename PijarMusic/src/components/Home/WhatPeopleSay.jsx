@@ -83,7 +83,7 @@ export default function WhatPeopleSay(){
             <h2 className='text-[#1D1D1D] font-outfit text-2xl font-bold md:text-4xl'>Solutions to Help People in Need 
             <br />
             and Build a Better Habit</h2>
-            <div className='bg-[#FF6002] w-10 h-0.5 rounded-full'></div>
+            <div className='bg-[#FF6002] w-20 h-0.5 rounded-full'></div>
             </div>
             <div id='btn' className=''>
             <button className='bg-[#FF6002] flex flex-row items-center rounded-lg font-outfit gap-3 px-5 py-2 md:px-8 md:py-5'><p className='text-white font-bold md:text-xl'>Donate Now</p><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
