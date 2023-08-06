@@ -126,5 +126,32 @@
     "number":"10M+",
     "desc":"Projects Funded"
    }
+ ],
+ "Accordion":[
+  {
+    "id":1,
+    "Title":"How much time do I need to volunteer?",
+    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+  },
+  {
+    "id":2,
+    "Title":"How Will My Donation Be Used?",
+    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+  },
+  {
+    "id":3,
+    "Title":"Can I Get Reward  When Completing Charity?",
+    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+  },
+  {
+    "id":4,
+    "Title":"How Can I Participate?",
+    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+  },
+  {
+    "id":5,
+    "Title":"Is there a minimum donation amount?",
+    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+  }
  ]
 }
