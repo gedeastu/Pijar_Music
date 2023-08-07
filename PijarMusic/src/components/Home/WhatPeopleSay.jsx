@@ -1,4 +1,5 @@
 import './WhatPeopleSay.css'
+import React from 'react';
 import { Swiper,SwiperSlide  } from 'swiper/react';
 import { EffectFade,Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -42,7 +43,7 @@ export default function WhatPeopleSay(){
          modules={[EffectFade, Autoplay]}
          loop = {true}
          autoplay = {
-            { delay: 8000 }
+            { delay: 5000 }
         }
          effect="fade"
          className='flex flex-row h-[80rem] md:h-[110vh] relative z-20'
