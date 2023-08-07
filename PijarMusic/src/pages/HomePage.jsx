@@ -12,14 +12,16 @@ export default function HomePage(){
         <>
         <div id='bg' className='container mx-auto bg-cover bg-fixed bg-center max-w-full relative flex flex-col h-max'>
         <Header TopBar={<TopBar/>}/>
-        <main className='flex flex-col bg-white'>
+        <main className='flex flex-col h-full bg-white'>
         <article className='flex flex-col gap-10'>
         <WhoWeAre/>
         <OurCampaign/>
         <LastestArticles/>
         <WhatPeopleSay/>
         </article>
+        <article className='bg-white h-screen'>
         <NeedHelp/>
+        </article>
         </main>
         {/* <Swiper
         // install Swiper modules
