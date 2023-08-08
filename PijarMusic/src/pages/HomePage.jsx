@@ -1,11 +1,17 @@
 import './HomePage.css'
+
+// Import Header & Components
 import Header from '../components/Home/Header'
 import TopBar from '../components/Home/topBar'
+
+//Import Main Layouting
 import WhoWeAre from '../components/Home/WhoWeAre'
 import OurCampaign from '../components/Home/OurCampaign'
 import LastestArticles from '../components/Home/LastestArticles'
 import WhatPeopleSay from '../components/Home/WhatPeopleSay'
 import NeedHelp from '../components/Home/NeedHelp'
+
+// Import Footer
 import Footer from '../components/Home/Footer'
 import { Parallax,ParallaxLayer } from '@react-spring/parallax'
 export default function HomePage(){
@@ -26,9 +32,7 @@ export default function HomePage(){
         <NeedHelp/>
         </article>
         </main>
-        <footer>
         <Footer/>
-        </footer>
         {/* <Swiper
         // install Swiper modules
         loop={true}
