@@ -1,157 +1,190 @@
 {
-  "OurCampaign":[
-  {
-    "id": 1,
-    "image": "./src/assets/RichBrian.jpeg",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  },
-  {
-    "id": 2,
-    "image": "./src/assets/alexTurner.jpeg",
-    "desc": "Alex Turner make charity  foods & drinks to help Disasters victim",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  },
-  {
-    "id": 3,
-    "image": "./src/assets/niki.jpeg",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  },
-  {
-    "id": 4,
-    "image": "./src/assets/lolotBand.jpeg",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  },
-  {
-    "id": 5,
-    "image": "./src/assets/gangga.jpeg",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  },
-  {
-    "id": 6,
-    "image": "./src/assets/blackpink.webp",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  },
-  {
-    "id": 7,
-    "image": "./src/assets/pamungkas.jpeg",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  },
-  {
-    "id": 8,
-    "image": "./src/assets/lanaDelRey.jpeg",
-    "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
-    "raiseDonate": "IDR.100K",
-    "targetDonate": "IDR.1000K"
-  }
- ],
- "LastestArticles":[
+  "OurCampaign": [
     {
-        "id": 1,
-        "image":"https://static01.nyt.com/images/2019/08/15/world/15indonesia-quake-1/merlin_158006205_8dc7cab1-7396-42e7-b09f-007a2ebb07c3-superJumbo.jpg",
-        "article1": "Massive Earthquakes",
-        "article2": "destroying villages",
-        "date": "15 Feb, 2023"
+      "id": 1,
+      "image": "./src/assets/RichBrian.jpeg",
+      "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
     },
     {
-        "id": 2,
-        "image": "./src/assets/cianjurEarthquake.jpeg",
-        "article1": "Massive Earthquakes",
-        "article2": "destroying villages",
-        "article": "Massive Earthquakes destroying villages",
-        "date": "15 Feb, 2023"
+      "id": 2,
+      "image": "./src/assets/alexTurner.jpeg",
+      "desc": "Alex Turner make charity  foods & drinks to help Disasters victim",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
     },
     {
-        "id": 3,
-        "image": "./src/assets/baliEarthquake.jpeg",
-        "article1": "Massive Earthquakes",
-        "article2": "destroying villages",
-        "article": "Massive Earthquakes destroying villages",
-        "date": "15 Feb, 2023"
+      "id": 3,
+      "image": "./src/assets/niki.jpeg",
+      "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
+    },
+    {
+      "id": 4,
+      "image": "./src/assets/lolotBand.jpeg",
+      "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
+    },
+    {
+      "id": 5,
+      "image": "./src/assets/gangga.jpeg",
+      "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
+    },
+    {
+      "id": 6,
+      "image": "./src/assets/blackpink.webp",
+      "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
+    },
+    {
+      "id": 7,
+      "image": "./src/assets/pamungkas.jpeg",
+      "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
+    },
+    {
+      "id": 8,
+      "image": "./src/assets/lanaDelRey.jpeg",
+      "desc": "Brian Concert Charity Fundraising for Rising from Natural Disasters",
+      "raiseDonate": "IDR.100K",
+      "targetDonate": "IDR.1000K"
     }
- ],
- "WhatPeopleSay":[
-  {
-    "id":1,
-    "image":"./src/assets/andrew.png",
-    "desc" : "Thanks to the incredible efforts of this music organization, lives are being changed through their unwavering commitment to charity. Their passion for music has become a powerful force for making a difference in our world.",
-    "name":"Andrew McCrea",
-    "profession":"Musicians - Artist"
-  },
-  {
-    "id":2,
-    "image":"./src/assets/alexTurnerVertical.jpeg",
-    "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda eius dicta libero enim quas distinctio unde voluptatem sequi pariatur quibusdam, fugiat iure. Sunt fugiat adipisci, officia eligendi eius sint.",
-    "name":"Alex Turner",
-    "profession":"Musicians - Artist"
-  },
-  {
-    "id":3,
-    "image":"./src/assets/fatthia.jpeg",
-    "desc" : "Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.",
-    "name":"Fathia Izzati",
-    "profession":"Musicians - Artist"
-  }
- ],
- "CTA":[
-   {
-    "id":1,
-    "number":"20M",
-    "desc":"Number of Supporters"
-   },
-   {
-    "id":2,
-    "number":"15K+",
-    "desc":"Volunteers Worldwide"
-   },
-   {
-    "id":3,
-    "number":"68K+",
-    "desc":"We've Helped Raise"
-   },
-   {
-    "id":4,
-    "number":"10M+",
-    "desc":"Projects Funded"
-   }
- ],
- "Accordion":[
-  {
-    "id":1,
-    "Title":"How much time do I need to volunteer?",
-    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
-  },
-  {
-    "id":2,
-    "Title":"How Will My Donation Be Used?",
-    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
-  },
-  {
-    "id":3,
-    "Title":"Can I Get Reward  When Completing Charity?",
-    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
-  },
-  {
-    "id":4,
-    "Title":"How Can I Participate?",
-    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
-  },
-  {
-    "id":5,
-    "Title":"Is there a minimum donation amount?",
-    "Content":"The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
-  }
- ]
+  ],
+  "LastestArticles": [
+    {
+      "id": 1,
+      "image": "https://static01.nyt.com/images/2019/08/15/world/15indonesia-quake-1/merlin_158006205_8dc7cab1-7396-42e7-b09f-007a2ebb07c3-superJumbo.jpg",
+      "article1": "Massive Earthquakes",
+      "article2": "destroying villages",
+      "date": "15 Feb, 2023"
+    },
+    {
+      "id": 2,
+      "image": "./src/assets/cianjurEarthquake.jpeg",
+      "article1": "Massive Earthquakes",
+      "article2": "destroying villages",
+      "article": "Massive Earthquakes destroying villages",
+      "date": "15 Feb, 2023"
+    },
+    {
+      "id": 3,
+      "image": "./src/assets/baliEarthquake.jpeg",
+      "article1": "Massive Earthquakes",
+      "article2": "destroying villages",
+      "article": "Massive Earthquakes destroying villages",
+      "date": "15 Feb, 2023"
+    }
+  ],
+  "WhatPeopleSay": [
+    {
+      "id": 1,
+      "image": "./src/assets/andrew.png",
+      "desc": "Thanks to the incredible efforts of this music organization, lives are being changed through their unwavering commitment to charity. Their passion for music has become a powerful force for making a difference in our world.",
+      "name": "Andrew McCrea",
+      "profession": "Musicians - Artist"
+    },
+    {
+      "id": 2,
+      "image": "./src/assets/alexTurnerVertical.jpeg",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda eius dicta libero enim quas distinctio unde voluptatem sequi pariatur quibusdam, fugiat iure. Sunt fugiat adipisci, officia eligendi eius sint.",
+      "name": "Alex Turner",
+      "profession": "Musicians - Artist"
+    },
+    {
+      "id": 3,
+      "image": "./src/assets/fatthia.jpeg",
+      "desc": "Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.",
+      "name": "Fathia Izzati",
+      "profession": "Musicians - Artist"
+    }
+  ],
+  "CTA": [
+    {
+      "id": 1,
+      "number": "20M",
+      "desc": "Number of Supporters"
+    },
+    {
+      "id": 2,
+      "number": "15K+",
+      "desc": "Volunteers Worldwide"
+    },
+    {
+      "id": 3,
+      "number": "68K+",
+      "desc": "We've Helped Raise"
+    },
+    {
+      "id": 4,
+      "number": "10M+",
+      "desc": "Projects Funded"
+    }
+  ],
+  "Accordion": [
+    {
+      "id": 1,
+      "Title": "How much time do I need to volunteer?",
+      "Content": "The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+    },
+    {
+      "id": 2,
+      "Title": "How Will My Donation Be Used?",
+      "Content": "The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+    },
+    {
+      "id": 3,
+      "Title": "Can I Get Reward  When Completing Charity?",
+      "Content": "The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+    },
+    {
+      "id": 4,
+      "Title": "How Can I Participate?",
+      "Content": "The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+    },
+    {
+      "id": 5,
+      "Title": "Is there a minimum donation amount?",
+      "Content": "The time commitment for volunteering at the Pijar Music Event may vary depending on the specific role and responsibilities. We offer flexible volunteer opportunities, ranging from a few hours to multiple days, allowing you to choose the time commitment that fits your availability and interest. We appreciate any amount of time you can contribute to support the event and our charitable cause."
+    }
+  ],
+  "Footer": [
+    {
+      "id": 1,
+      "title": "Menu",
+      "data": [
+        {
+          "id": 101,
+          "destination": "Donation",
+          "Link": "/donation"
+        },
+        {
+          "id": 102,
+          "destination": "Features",
+          "Link": "/features"
+        },
+        {
+          "id": 103,
+          "destination": "Categories",
+          "Link": "/categories"
+        },
+        {
+          "id": 104,
+          "destination": "Valounteer",
+          "Link": "/valounteer"
+        },
+        {
+          "id": 105,
+          "destination": "About Us",
+          "Link": "/aboutUs"
+        }
+      ]
+    }
+  ]
 }
