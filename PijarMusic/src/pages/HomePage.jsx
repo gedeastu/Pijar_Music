@@ -17,11 +17,11 @@ import { Parallax,ParallaxLayer } from '@react-spring/parallax'
 export default function HomePage(){
     return(
         <>
-        <div id='bg' className='container mx-auto bg-cover bg-fixed bg-center max-w-full relative flex flex-col h-max'>
+        <div id='bg' className='container mx-auto bg-cover bg-fixed bg-center max-w-full relative flex flex-col h-screen'>
         <Header 
         TopBar={<TopBar/>}
         />
-        <main className='flex flex-col h-full'>
+        <main className='flex flex-col'>
         <article className='flex flex-col gap-10 bg-white'>
         <WhoWeAre/>
         <OurCampaign/>
@@ -33,26 +33,6 @@ export default function HomePage(){
         </article>
         </main>
         <Footer/>
-        {/* <Swiper
-        // install Swiper modules
-        loop={true}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={2}
-        navigation
-        pagination={
-            { clickable: true }
-        }
-        // scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
-        className='text-black w-full relative z-50 h-96'
-        >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        </Swiper> */}
         </div>
         </>
     )

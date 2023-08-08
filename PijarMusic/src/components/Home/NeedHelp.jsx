@@ -49,8 +49,8 @@ const NeedHelp = () => {
           </svg>)}
           </button>
           {accordionSelected == index ? (
-          <div id="content" className='transition-all duration-500 h-28'>
-            <p className='my-2 px-3 text-black font-outfit h-full opacity-100 '>{item.Content}</p>
+          <div id="content" className='transition-all duration-500 h-[11rem]'>
+            <p className='my-2 px-3 text-black font-outfit h-full opacity-100'>{item.Content}</p>
           </div>
           ):(
           <div id="content" className='text-black h-0 transition-all duration-500'>
