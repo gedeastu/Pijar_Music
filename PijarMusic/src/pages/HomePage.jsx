@@ -11,15 +11,17 @@ export default function HomePage(){
     return(
         <>
         <div id='bg' className='container mx-auto bg-cover bg-fixed bg-center max-w-full relative flex flex-col h-max'>
-        <Header TopBar={<TopBar/>}/>
-        <main className='flex flex-col h-full bg-white'>
-        <article className='flex flex-col gap-10'>
+        <Header 
+        TopBar={<TopBar/>}
+        />
+        <main className='flex flex-col h-full'>
+        <article className='flex flex-col gap-10 bg-white'>
         <WhoWeAre/>
         <OurCampaign/>
         <LastestArticles/>
         <WhatPeopleSay/>
         </article>
-        <article className='bg-white h-screen'>
+        <article className='bg-white'>
         <NeedHelp/>
         </article>
         </main>
