@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react';
 import { AccordionGetPosts } from '../../../api/api';
 const NeedHelp = () => {
   const [dataAccordion,setDataAccordion] = useState([]);
-    const fetchData = async () => {
+    const fetchData =  async () => {
         try{
             const data = await AccordionGetPosts();
             setDataAccordion(data);
