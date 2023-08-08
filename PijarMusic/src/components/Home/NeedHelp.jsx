@@ -39,7 +39,7 @@ const NeedHelp = () => {
 
     <div id="accordion" className='flex flex-col items-center rounded-lg'>
       {dataAccordion.map((item, index)=>(
-        <div key={item.id} className='w-[30rem] transition-all flex flex-col items-center duration-500 md:w-[50rem]'>
+        <div key={item.id} className='w-[30rem] h-full transition-all flex flex-col items-center duration-500 md:w-[50rem]'>
           <button onClick={()=>toggleSelected(index)} className={accordionSelected == index ? ('bg-[#FF6002] cursor-pointer relative z-40 flex flex-row items-center px-5 rounded-lg text-white justify-between w-[30rem] h-[4rem] md:w-[50rem] md:h-[4rem]'):('bg-[#F5F5F5] cursor-pointer relative z-40 rounded-lg flex flex-row w-[30rem] h-[4rem] text-black items-center justify-between px-5 md:w-[50rem] md:h-[4rem]')}>
           <h1 className='font-bold text-lg md:text-xl'>{item.Title}</h1>
           {accordionSelected == index ? (<svg width="30" height="4" viewBox="0 0 30 4" fill="none" xmlns="http://www.w3.org/2000/svg">
