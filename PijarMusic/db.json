@@ -157,8 +157,8 @@
   "Footer": [
     {
       "id": 1,
-      "title": "Menu",
-      "data": [
+      "titleMenu": "Menu",
+      "dataMenu": [
         {
           "id": 101,
           "destination": "Donation",
@@ -183,6 +183,56 @@
           "id": 105,
           "destination": "About Us",
           "Link": "/aboutUs"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titleAbout": "About Us",
+      "dataAbout": [
+        {
+          "id": 101,
+          "destination": "How it work?",
+          "Link": "/HowItWork"
+        },
+        {
+          "id": 102,
+          "destination": "Contact Us",
+          "Link": "/ContactUs"
+        },
+        {
+          "id": 103,
+          "destination": "FAQ",
+          "Link": "/faq"
+        },
+        {
+          "id": 104,
+          "destination": "Help",
+          "Link": "/Help"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titleContact": "Contacts Info",
+      "dataContact": [
+        {
+          "id": 101,
+          "icon": "<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='17' cy='17' r='17' fill='#FF6002'/><g clip-path='url(#clip0_1_529)'><path d='M23.9781 20.5819L23.3424 23.3382C23.2531 23.7278 22.9106 24.0005 22.5095 24.0005C15.6109 23.9999 10 18.389 10 11.4902C10 11.0893 10.2726 10.7464 10.6623 10.6575L13.4185 10.0218C13.8199 9.92877 14.2301 10.1371 14.3969 10.5173L15.6689 13.4841C15.8176 13.8335 15.7173 14.2407 15.4234 14.4807L13.9512 15.6628C14.8803 17.5555 16.4192 19.0944 18.3125 20.0241L19.5178 18.553C19.7554 18.2583 20.1656 18.1563 20.515 18.3076L23.4818 19.5794C23.8387 19.7671 24.0711 20.1827 23.9781 20.5819Z' fill='white'/></g><defs><clipPath id='clip0_1_529'><rect width='14' height='14' fill='white' transform='translate(10 10)'/></clipPath></defs></svg>",
+          "title": "Call us",
+          "content": "+62-897-0557-659"
+        },
+        {
+          "id": 102,
+          "icon": "<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='17' cy='17' r='17' fill='#FF6002'/><path d='M17 19.625C16.548 19.625 16.096 19.4767 15.7105 19.1763L10 14.7359V20.9375C10 21.6621 10.5876 22.25 11.3125 22.25H22.6875C23.4124 22.25 24 21.6624 24 20.9375V14.7359L18.2906 19.1793C17.9051 19.4773 17.4512 19.625 17 19.625ZM10.4454 13.973L16.2478 18.4875C16.6905 18.832 17.3106 18.832 17.7533 18.4875L23.5557 13.973C23.8113 13.7543 24 13.418 24 13.0625C24 12.3376 23.4121 11.75 22.6875 11.75H11.3125C10.5876 11.75 10 12.3376 10 13.0625C10 13.418 10.1643 13.7543 10.4454 13.973Z' fill='white'/></svg>",
+          "title": "Mail us",
+          "content": "spmusic@pijarmusic.com"
+        },
+        {
+          "id": 103,
+          "icon": "<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='17' cy='17' r='17' fill='#FF6002'/><g clip-path='url(#clip0_1_540)'><path d='M16.602 23.65C15.1746 21.8945 12 17.6398 12 15.25C12 12.3505 14.3505 10 17.25 10C20.1484 10 22.5 12.3505 22.5 15.25C22.5 17.6398 19.3008 21.8945 17.898 23.65C17.5617 24.0684 16.9383 24.0684 16.602 23.65ZM17.25 17C18.2152 17 19 16.2152 19 15.25C19 14.2848 18.2152 13.5 17.25 13.5C16.2848 13.5 15.5 14.2848 15.5 15.25C15.5 16.2152 16.2848 17 17.25 17Z' fill='white'/></g><defs><clipPath id='clip0_1_540'><rect width='10.5' height='14' fill='white' transform='translate(12 10)'/></clipPath></defs></svg>",
+          "title": "Visit us",
+          "content": "Your Address here"
         }
       ]
     }

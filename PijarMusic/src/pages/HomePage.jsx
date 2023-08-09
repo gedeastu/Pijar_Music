@@ -13,6 +13,7 @@ import NeedHelp from "../components/Home/NeedHelp";
 
 // Import Footer
 import Footer from "../components/Home/Footer";
+import Copyright from "../components/Home/copyright";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 export default function HomePage() {
   return (
@@ -33,7 +34,7 @@ export default function HomePage() {
             <NeedHelp />
           </article>
         </main>
-        <Footer />
+        <Footer Copyright={<Copyright />} />
       </div>
     </>
   );
