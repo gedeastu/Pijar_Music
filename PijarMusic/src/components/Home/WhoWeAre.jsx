@@ -1,6 +1,7 @@
 import "./WhoWeAre.css";
 import theWeeknd from "../assets/theWeeknd.jpeg";
 import mcr from "../assets/mcr.jpeg";
+import { useEffect } from "react";
 export default function WhoWeAre() {
   return (
     <>
@@ -34,13 +35,17 @@ export default function WhoWeAre() {
               </defs>
             </svg>
             <img
-              data-aos="fade-right"
+              data-aos="zoom-out"
+              data-aos-easing="ease-in-sine"
               data-aos-duration="1000"
               src={theWeeknd}
               alt=""
               className="w-full h-full object-cover rounded-lg"
             />
             <img
+              data-aos="zoom-out"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
               src={mcr}
               alt=""
               className="w-52 h-60 object-center rounded-lg object-cover absolute z-20 -right-20 -bottom-16 md:w-60 md:h-80 md:-bottom-12"

@@ -1,5 +1,7 @@
 import "./HomePage.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 // Import Header & Components
 import Header from "../components/Home/Header";
 import TopBar from "../components/Home/topBar";
@@ -16,6 +18,10 @@ import Footer from "../components/Home/Footer";
 import Copyright from "../components/Home/copyright";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 export default function HomePage() {
+  useEffect(() => {
+    AOS.init({ once: true });
+    AOS.refresh();
+  }, []);
   return (
     <>
       <div

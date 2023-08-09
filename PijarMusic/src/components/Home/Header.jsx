@@ -1,15 +1,9 @@
 import "./Header.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 // import { Dropdown } from 'react-nested-dropdown';
 // import 'react-nested-dropdown/dist/styles.css';
 export default function Header({ TopBar }) {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
   const Navigate = useNavigate();
   // const [topBar, setTopBar] = useState(false);
   // const showTopBar = () => {
