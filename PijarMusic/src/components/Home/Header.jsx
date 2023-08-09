@@ -1,11 +1,15 @@
 import "./Header.css";
-import { useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import OurActivity from "../assets/OurActivity.svg";
-import * as AiIcons from "react-icons/ai";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import { Dropdown } from 'react-nested-dropdown';
 // import 'react-nested-dropdown/dist/styles.css';
 export default function Header({ TopBar }) {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const Navigate = useNavigate();
   // const [topBar, setTopBar] = useState(false);
   // const showTopBar = () => {
@@ -37,7 +41,10 @@ export default function Header({ TopBar }) {
     <>
       <header className="max-w-full relative">
         <div className="h-[95rem] md:h-screen">
-          <nav className="relative px-7 py-7 flex flex-row-reverse items-center justify-between md:flex-row md:px-28 md:py-7">
+          <nav
+            data-aos="fade-bottom"
+            className="relative px-7 py-7 flex flex-row-reverse items-center justify-between md:flex-row md:px-28 md:py-7"
+          >
             <div
               id="logo"
               className="flex flex-row-reverse items-center gap-2 md:flex-row md:scale-125"
@@ -147,7 +154,11 @@ export default function Header({ TopBar }) {
           </nav>
 
           <div className="flex flex-col px-7 relative z-40 items-center gap-14 md:flex-row md:items-center md:px-28 md:justify-between">
-            <article className="text-white flex flex-col items-start justify-center h-[43rem] gap-9 font-outfit">
+            <article
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="text-white flex flex-col items-start justify-center h-[43rem] gap-9 font-outfit"
+            >
               <h1 className="font-semibold">TRUSTED MUSIC COMPANY</h1>
               <h2 className="font-bold text-5xl md:text-7xl">
                 Let's Help And Make
@@ -248,7 +259,12 @@ export default function Header({ TopBar }) {
               </div>
             </article>
             <aside className="relative">
-              <article className="bg-white shadow-xl relative z-20 gap-4 flex flex-col rounded-xl font-outfit p-5 md:w-[40rem]">
+              <article
+                data-aos="zoom-out"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine"
+                className="bg-white shadow-xl relative z-20 gap-4 flex flex-col rounded-xl font-outfit p-5 md:w-[40rem]"
+              >
                 <svg
                   id="IconCharity"
                   className="absolute -right-5 -top-5"
@@ -344,7 +360,12 @@ export default function Header({ TopBar }) {
                   </svg>
                 </button>
               </article>
-              <div className="w-[25rem] bg-[#FF6002] h-96 absolute -right-3 -bottom-5 rounded-lg md:w-[35rem] md:-right-7 md:-bottom-7"></div>
+              <div
+                data-aos="zoom-out"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine"
+                className="w-[25rem] bg-[#FF6002] h-96 absolute -right-3 -bottom-5 rounded-lg md:w-[35rem] md:-right-7 md:-bottom-7"
+              ></div>
             </aside>
           </div>
           {/* <div className='grid grid-cols-1 gap-1.5 place-content-center w-full py-2.5 h-max bg-[#FF6002] absolute bottom-0 z-10 px-7 md:px-14 md:grid-cols-2 md:h-[2.5rem] md:gap-0'>
